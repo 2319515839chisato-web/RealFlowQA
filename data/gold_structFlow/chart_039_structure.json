@@ -1,0 +1,265 @@
+{
+  "chart_id": "chart_039",
+  "title": "生产型企业物资仓储管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "生产部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "仓储部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关单位",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "产成品",
+      "full_label": "生产部产成品",
+      "lane_id": "L1",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N2",
+      "text": "原材料",
+      "full_label": "采购部原材料",
+      "lane_id": "L2",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N3",
+      "text": "办理入库",
+      "full_label": "仓储部办理入库",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N4",
+      "text": "物资台账",
+      "full_label": "仓储部物资台账",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N5",
+      "text": "存储管理",
+      "full_label": "仓储部存储管理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N6",
+      "text": "办理出库",
+      "full_label": "仓储部办理出库",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N7",
+      "text": "领料单",
+      "full_label": "生产部领料单",
+      "lane_id": "L1",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N8",
+      "text": "出库单",
+      "full_label": "相关单位出库单",
+      "lane_id": "L5",
+      "responsible": "相关单位"
+    },
+    {
+      "node_id": "N9",
+      "text": "物资盘存",
+      "full_label": "仓储部物资盘存",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N10",
+      "text": "废品处理方案",
+      "full_label": "仓储部废品处理方案",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N11",
+      "text": "审核",
+      "full_label": "生产部审核",
+      "lane_id": "L1",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N12",
+      "text": "废品处理",
+      "full_label": "仓储部废品处理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N13",
+      "text": "仓储费用核算",
+      "full_label": "仓储部仓储费用核算",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N14",
+      "text": "原材料明细账",
+      "full_label": "财务部原材料明细账",
+      "lane_id": "L4",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N15",
+      "text": "原材料明细账",
+      "full_label": "财务部原材料明细账",
+      "lane_id": "L4",
+      "responsible": "财务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产成品 -> 办理入库"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "原材料 -> 办理入库"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理入库 -> 物资台账"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物资台账 -> 存储管理"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "存储管理 -> 办理出库"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理出库 -> 领料单"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理出库 -> 出库单"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理出库 -> 物资盘存"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物资盘存 -> 废品处理方案"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "废品处理方案 -> 审核"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 废品处理"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "废品处理 -> 仓储费用核算"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "废品处理方案 -> 废品处理"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N4",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物资台账 -> 原材料明细账"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N9",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物资盘存 -> 原材料明细账"
+    }
+  ]
+}

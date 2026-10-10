@@ -1,0 +1,309 @@
+{
+  "chart_id": "chart_047",
+  "title": "销售目标与计划管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "销售人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "销售主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "销售经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "列出制定销售目标需解决的问题",
+      "full_label": "销售主管列出制定销售目标需解决的问题",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N2",
+      "text": "制定具体目标与计划",
+      "full_label": "销售主管制定具体目标与计划",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "销售经理审批",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "编制销售计划书",
+      "full_label": "销售主管编制销售计划书",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批",
+      "full_label": "销售经理审批",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N6",
+      "text": "执行销售计划",
+      "full_label": "销售人员执行销售计划",
+      "lane_id": "L1",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "销售过程检查与评估",
+      "full_label": "销售主管销售过程检查与评估",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N8",
+      "text": "调整目标",
+      "full_label": "销售人员调整目标",
+      "lane_id": "L1",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "审批观察",
+      "full_label": "销售主管审批观察",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N10",
+      "text": "执行",
+      "full_label": "销售人员执行",
+      "lane_id": "L1",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N11",
+      "text": "个人目标完成情况总结②",
+      "full_label": "销售人员个人目标完成情况总结②",
+      "lane_id": "L1",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N12",
+      "text": "汇总分析",
+      "full_label": "销售主管汇总分析",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N13",
+      "text": "销售部目标计划执行总结",
+      "full_label": "销售主管销售部目标计划执行总结",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N14",
+      "text": "销售部目标计划考核评估",
+      "full_label": "销售经理销售部目标计划考核评估",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "调整修正",
+      "full_label": "销售主管调整修正",
+      "lane_id": "L2",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N16",
+      "text": "审批",
+      "full_label": "销售经理审批",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N17",
+      "text": "审批结果",
+      "full_label": "销售经理审批结果",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "列出制定销售目标需解决的问题 -> 制定具体目标与计划"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定具体目标与计划 -> 审批"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N2",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审批 -> 制定具体目标与计划，condition=N"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 编制销售计划书，condition=Y"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制销售计划书 -> 审批"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "审批 -> 编制销售计划书"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 执行销售计划"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "执行销售计划 -> 销售过程检查与评估"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "销售过程检查与评估 -> 调整目标"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "调整目标 -> 审批观察"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "审批观察 -> 调整目标"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批观察 -> 执行"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "执行 -> 个人目标完成情况总结②"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "个人目标完成情况总结② -> 汇总分析"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇总分析 -> 销售部目标计划执行总结"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "销售部目标计划执行总结 -> 销售部目标计划考核评估"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "销售部目标计划考核评估 -> 调整修正"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "调整修正 -> 审批"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N16",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "审批 -> 调整修正"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 审批结果"
+    }
+  ]
+}

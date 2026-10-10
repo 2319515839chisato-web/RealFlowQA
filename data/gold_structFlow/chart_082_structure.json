@@ -1,0 +1,227 @@
+{
+  "chart_id": "chart_082",
+  "title": "公司仓储部工作职责及流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "仓储检验部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "销售组",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "终端客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L7",
+      "name": "表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "存货检验",
+      "full_label": "仓储检验部存货检验",
+      "lane_id": "L1",
+      "responsible": "仓储检验部"
+    },
+    {
+      "node_id": "N2",
+      "text": "入库",
+      "full_label": "采购部入库",
+      "lane_id": "L2",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N3",
+      "text": "存货管理",
+      "full_label": "仓储检验部存货管理",
+      "lane_id": "L1",
+      "responsible": "仓储检验部"
+    },
+    {
+      "node_id": "N4",
+      "text": "盘点加工",
+      "full_label": "财务部盘点加工",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批盘点合理性",
+      "full_label": "总经理审批盘点合理性",
+      "lane_id": "L5",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N6",
+      "text": "存货加工",
+      "full_label": "仓储检验部存货加工",
+      "lane_id": "L1",
+      "responsible": "仓储检验部"
+    },
+    {
+      "node_id": "N7",
+      "text": "电商部销售",
+      "full_label": "销售组电商部销售",
+      "lane_id": "L4",
+      "responsible": "销售组"
+    },
+    {
+      "node_id": "N8",
+      "text": "存货包装储运",
+      "full_label": "仓储检验部存货包装储运",
+      "lane_id": "L1",
+      "responsible": "仓储检验部"
+    },
+    {
+      "node_id": "N9",
+      "text": "市场部销售",
+      "full_label": "销售组市场部销售",
+      "lane_id": "L4",
+      "responsible": "销售组"
+    },
+    {
+      "node_id": "N10",
+      "text": "客户签收",
+      "full_label": "终端客户客户签收",
+      "lane_id": "L6",
+      "responsible": "终端客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "存货检验 -> 入库"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N1",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "入库 -> 存货检验"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "存货管理 -> 盘点加工"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "盘点加工 -> 审批盘点合理性"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N3",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "审批盘点合理性 -> 存货管理，condition=否"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审批盘点合理性 -> 盘点加工，condition=是"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "调拨/退货",
+      "edge_type": "condition",
+      "description": "存货加工 -> 电商部销售，condition=调拨/退货"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N6",
+      "condition": "调拨/退货",
+      "edge_type": "loop",
+      "description": "电商部销售 -> 存货加工，condition=调拨/退货"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "电商部销售 -> 客户签收"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "调拨/退货",
+      "edge_type": "condition",
+      "description": "存货包装储运 -> 市场部销售，condition=调拨/退货"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N8",
+      "condition": "调拨/退货",
+      "edge_type": "loop",
+      "description": "市场部销售 -> 存货包装储运，condition=调拨/退货"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "市场部销售 -> 客户签收"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N7",
+      "condition": "退换货",
+      "edge_type": "loop",
+      "description": "客户签收 -> 电商部销售，condition=退换货"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N10",
+      "to": "N9",
+      "condition": "退换货",
+      "edge_type": "loop",
+      "description": "客户签收 -> 市场部销售，condition=退换货"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "chart_id": "chart_042",
+  "title": "市场调研工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "市场调研专员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "市场调研主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "市场经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "发现问题，确定调研目的",
+      "full_label": "市场调研主管发现问题，确定调研目的",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N2",
+      "text": "确定调研课题",
+      "full_label": "市场调研主管确定调研课题",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N3",
+      "text": "审核",
+      "full_label": "市场经理审核",
+      "lane_id": "L3",
+      "responsible": "市场经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "确定调研方法",
+      "full_label": "市场调研主管确定调研方法",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "确定调研对象、时间、地点及调研人员等",
+      "full_label": "市场调研主管确定调研对象、时间、地点及调研人员等",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N6",
+      "text": "形成调研计划",
+      "full_label": "市场调研主管形成调研计划",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N7",
+      "text": "审核",
+      "full_label": "市场经理审核",
+      "lane_id": "L3",
+      "responsible": "市场经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "执行调研",
+      "full_label": "市场调研专员执行调研",
+      "lane_id": "L1",
+      "responsible": "市场调研专员"
+    },
+    {
+      "node_id": "N9",
+      "text": "汇总调研信息，撰写调研报告",
+      "full_label": "市场调研主管汇总调研信息，撰写调研报告",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    },
+    {
+      "node_id": "N10",
+      "text": "审阅",
+      "full_label": "市场经理审阅",
+      "lane_id": "L3",
+      "responsible": "市场经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "应用存档",
+      "full_label": "市场调研主管应用存档",
+      "lane_id": "L2",
+      "responsible": "市场调研主管"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发现问题，确定调研目的 -> 确定调研课题"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定调研课题 -> 审核"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N2",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "审核 -> 确定调研课题，condition=否"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审核 -> 确定调研方法，condition=是"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定调研方法 -> 确定调研对象、时间、地点及调研人员等"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定调研对象、时间、地点及调研人员等 -> 形成调研计划"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "形成调研计划 -> 审核"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N6",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "审核 -> 形成调研计划，condition=否"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审核 -> 执行调研，condition=是"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "执行调研 -> 汇总调研信息，撰写调研报告"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇总调研信息，撰写调研报告 -> 审阅"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审阅 -> 应用存档"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N6",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "形成调研计划 -> 执行调研"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "chart_id": "chart_058",
+  "title": "员工劳动合同管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "员工",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "部门负责人/分管领导",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "人事部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "新员工入职",
+      "full_label": "员工新员工入职",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N2",
+      "text": "签订试用合同",
+      "full_label": "人事部签订试用合同",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N3",
+      "text": "试用期满",
+      "full_label": "员工试用期满",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N4",
+      "text": "考核",
+      "full_label": "部门负责人/分管领导考核",
+      "lane_id": "L2",
+      "responsible": "部门负责人/分管领导"
+    },
+    {
+      "node_id": "N5",
+      "text": "辞退/延长试用期",
+      "full_label": "人事部辞退/延长试用期",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N6",
+      "text": "签订正式合同",
+      "full_label": "人事部签订正式合同",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N7",
+      "text": "合同期满",
+      "full_label": "员工合同期满",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N8",
+      "text": "是否续签",
+      "full_label": "员工是否续签",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N9",
+      "text": "办理离职手续",
+      "full_label": "人事部办理离职手续",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N10",
+      "text": "劳动仲裁机构签字备案",
+      "full_label": "人事部劳动仲裁机构签字备案",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N11",
+      "text": "存档",
+      "full_label": "人事部存档",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "新员工入职 -> 签订试用合同"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订试用合同 -> 试用期满"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "试用期满 -> 考核"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "不合格",
+      "edge_type": "condition",
+      "description": "考核 -> 辞退/延长试用期，condition=不合格"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N6",
+      "condition": "合格",
+      "edge_type": "condition",
+      "description": "考核 -> 签订正式合同，condition=合格"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订正式合同 -> 合同期满"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "合同期满 -> 是否续签"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N6",
+      "condition": "是",
+      "edge_type": "loop",
+      "description": "是否续签 -> 签订正式合同，condition=是"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "是否续签 -> 办理离职手续，condition=否"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N6",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订正式合同 -> 劳动仲裁机构签字备案"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理离职手续 -> 劳动仲裁机构签字备案"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "劳动仲裁机构签字备案 -> 存档"
+    }
+  ]
+}

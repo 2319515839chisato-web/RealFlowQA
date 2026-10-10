@@ -1,0 +1,177 @@
+{
+  "chart_id": "chart_075",
+  "title": "研发流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "市场部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "技术中心",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "生产部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "总经理",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "市场调研",
+      "full_label": "市场部市场调研",
+      "lane_id": "L1",
+      "responsible": "市场部"
+    },
+    {
+      "node_id": "N2",
+      "text": "项目论证",
+      "full_label": "技术中心项目论证",
+      "lane_id": "L2",
+      "responsible": "技术中心"
+    },
+    {
+      "node_id": "N3",
+      "text": "项目建议",
+      "full_label": "生产部项目建议",
+      "lane_id": "L3",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N4",
+      "text": "研发立项",
+      "full_label": "技术中心研发立项",
+      "lane_id": "L2",
+      "responsible": "技术中心"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批",
+      "full_label": "生产部审批",
+      "lane_id": "L3",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N6",
+      "text": "审批",
+      "full_label": "财务部审批",
+      "lane_id": "L4",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "开发设计",
+      "full_label": "技术中心开发设计",
+      "lane_id": "L2",
+      "responsible": "技术中心"
+    },
+    {
+      "node_id": "N8",
+      "text": "产品开发月计划",
+      "full_label": "财务部产品开发月计划",
+      "lane_id": "L4",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N9",
+      "text": "生产实施",
+      "full_label": "生产部生产实施",
+      "lane_id": "L3",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N10",
+      "text": "结题验收",
+      "full_label": "技术中心结题验收",
+      "lane_id": "L2",
+      "responsible": "技术中心"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "市场调研 -> 项目论证"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N3",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目建议 -> 项目论证"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目论证 -> 研发立项"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "研发立项 -> 审批"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 审批"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 开发设计"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开发设计 -> 产品开发月计划"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品开发月计划 -> 生产实施"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产实施 -> 结题验收"
+    }
+  ]
+}

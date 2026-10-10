@@ -1,0 +1,234 @@
+{
+  "chart_id": "chart_054",
+  "title": "印章使用管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "用印人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "行政部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "相关领导",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "填写用章申请表",
+      "full_label": "用印人员填写用章申请表",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "用印人员审核",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    },
+    {
+      "node_id": "N3",
+      "text": "公司章？",
+      "full_label": "用印人员公司章？",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核",
+      "full_label": "行政部审核",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N5",
+      "text": "请示否？",
+      "full_label": "行政部请示否？",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N6",
+      "text": "审核",
+      "full_label": "相关领导审核",
+      "lane_id": "L3",
+      "responsible": "相关领导"
+    },
+    {
+      "node_id": "N7",
+      "text": "加盖印章",
+      "full_label": "行政部加盖印章",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N8",
+      "text": "用印登记",
+      "full_label": "行政部用印登记",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N9",
+      "text": "资料归档",
+      "full_label": "行政部资料归档",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N10",
+      "text": "加盖部门章",
+      "full_label": "用印人员加盖部门章",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    },
+    {
+      "node_id": "N11",
+      "text": "用印登记",
+      "full_label": "用印人员用印登记",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    },
+    {
+      "node_id": "N12",
+      "text": "资料归档",
+      "full_label": "用印人员资料归档",
+      "lane_id": "L1",
+      "responsible": "用印人员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "填写用章申请表 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 公司章？，condition=Y"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N1",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 填写用章申请表，condition=N"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N10",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "公司章？ -> 加盖部门章，condition=N"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N3",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "公司章？ -> 审核，condition=Y"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 请示否？"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N4",
+      "to": "N1",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 填写用章申请表，condition=N"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N5",
+      "to": "N7",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "请示否？ -> 加盖印章，condition=N"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N5",
+      "to": "N6",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "请示否？ -> 审核，condition=Y"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N6",
+      "to": "N7",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 加盖印章，condition=Y"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N6",
+      "to": "N1",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 填写用章申请表，condition=N"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "加盖印章 -> 用印登记"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "用印登记 -> 资料归档"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "加盖部门章 -> 用印登记"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "用印登记 -> 资料归档"
+    }
+  ]
+}

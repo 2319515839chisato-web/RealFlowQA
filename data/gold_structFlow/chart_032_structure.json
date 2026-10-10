@@ -1,0 +1,229 @@
+{
+  "chart_id": "chart_032",
+  "title": "内部财务审计工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "节点",
+      "description": "非执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "财务经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "提出财务审计工作计划",
+      "full_label": "财务部提出财务审计工作计划",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L4",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L5",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "制定具体的审计实施方案",
+      "full_label": "财务部制定具体的审计实施方案",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N5",
+      "text": "收到通知",
+      "full_label": "相关部门收到通知",
+      "lane_id": "L2",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N6",
+      "text": "提供各种原始收支凭证",
+      "full_label": "相关部门提供各种原始收支凭证",
+      "lane_id": "L2",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N7",
+      "text": "审查",
+      "full_label": "财务部审查",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N8",
+      "text": "编制审计报告",
+      "full_label": "财务部编制审计报告",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N9",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L4",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N10",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L5",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "归档",
+      "full_label": "财务部归档",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出财务审计工作计划 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审批，condition=Y"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N1",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 提出财务审计工作计划，condition=N"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 制定具体的审计实施方案"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定具体的审计实施方案 -> 收到通知"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "收到通知 -> 提供各种原始收支凭证"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提供各种原始收支凭证 -> 审查"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审查 -> 编制审计报告，condition=Y"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N6",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审查 -> 提供各种原始收支凭证，condition=N"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制审计报告 -> 审核"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审批，condition=Y"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N8",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 编制审计报告，condition=N"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N9",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审批 -> 审核，condition=N"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N10",
+      "to": "N11",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 归档，condition=Y"
+    }
+  ]
+}

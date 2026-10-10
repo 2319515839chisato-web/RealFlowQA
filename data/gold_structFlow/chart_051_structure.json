@@ -1,0 +1,203 @@
+{
+  "chart_id": "chart_051",
+  "title": "行政办公室收文工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "各部门或外部人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "行政人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "行政经理及总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "外部来文",
+      "full_label": "各部门或外部人员外部来文",
+      "lane_id": "L1",
+      "responsible": "各部门或外部人员"
+    },
+    {
+      "node_id": "N2",
+      "text": "接收文件",
+      "full_label": "行政人员接收文件",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N3",
+      "text": "核定整理文件",
+      "full_label": "行政人员核定整理文件",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核",
+      "full_label": "行政经理及总经理审核",
+      "lane_id": "L3",
+      "responsible": "行政经理及总经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "向上呈报",
+      "full_label": "行政人员向上呈报",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N6",
+      "text": "领导审阅",
+      "full_label": "领导审阅",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "审批",
+      "full_label": "行政经理及总经理审批",
+      "lane_id": "L3",
+      "responsible": "行政经理及总经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "传阅",
+      "full_label": "各部门或外部人员传阅",
+      "lane_id": "L1",
+      "responsible": "各部门或外部人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "具体办理",
+      "full_label": "各部门或外部人员具体办理",
+      "lane_id": "L1",
+      "responsible": "各部门或外部人员"
+    },
+    {
+      "node_id": "N10",
+      "text": "秘书回复",
+      "full_label": "行政人员秘书回复",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N11",
+      "text": "资料归档",
+      "full_label": "行政人员资料归档",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "外部来文 -> 接收文件"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接收文件 -> 核定整理文件"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "核定整理文件 -> 审核"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 向上呈报，condition=Y"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "向上呈报 -> 领导审阅"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "领导审阅 -> 审批"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 传阅，condition=Y"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "传阅 -> 具体办理"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "具体办理 -> 秘书回复"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "秘书回复 -> 资料归档"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N4",
+      "to": "N3",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 核定整理文件"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N7",
+      "to": "N4",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审批 -> 审核,condition=N"
+    }
+  ]
+}

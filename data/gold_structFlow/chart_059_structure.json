@@ -1,0 +1,311 @@
+{
+  "chart_id": "chart_059",
+  "title": "员工培训管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "员工",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "人事部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "主管领导",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "关联流程/规章/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "培训需求",
+      "full_label": "员工培训需求",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N2",
+      "text": "培训需求分析",
+      "full_label": "人事部培训需求分析",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N3",
+      "text": "满足必备知识技能",
+      "full_label": "人事部满足必备知识技能",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N4",
+      "text": "入职培训",
+      "full_label": "人事部入职培训",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N5",
+      "text": "满足发展知识技能",
+      "full_label": "人事部满足发展知识技能",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N6",
+      "text": "在职培训",
+      "full_label": "人事部在职培训",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N7",
+      "text": "选择培训方式",
+      "full_label": "人事部选择培训方式",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N8",
+      "text": "选择培训课程",
+      "full_label": "人事部选择培训课程",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N9",
+      "text": "选择培训场地",
+      "full_label": "人事部选择培训场地",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N10",
+      "text": "确定预算",
+      "full_label": "人事部确定预算",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N11",
+      "text": "制订培训计划",
+      "full_label": "人事部制订培训计划",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N12",
+      "text": "审批",
+      "full_label": "主管领导审批",
+      "lane_id": "L4",
+      "responsible": "主管领导"
+    },
+    {
+      "node_id": "N13",
+      "text": "实施培训计划",
+      "full_label": "人事部实施培训计划",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N14",
+      "text": "参加培训",
+      "full_label": "员工参加培训",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N15",
+      "text": "培训测试",
+      "full_label": "人事部培训测试",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N16",
+      "text": "参加考试",
+      "full_label": "员工参加考试",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N17",
+      "text": "总结",
+      "full_label": "员工总结",
+      "lane_id": "L1",
+      "responsible": "员工"
+    },
+    {
+      "node_id": "N18",
+      "text": "批转",
+      "full_label": "相关部门批转",
+      "lane_id": "L2",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N19",
+      "text": "培训效果评估",
+      "full_label": "人事部培训效果评估",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N20",
+      "text": "记录培训档案",
+      "full_label": "人事部记录培训档案",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训需求 -> 培训需求分析"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训需求分析 -> 满足必备知识技能"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "满足必备知识技能 -> 入职培训"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N2",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训需求分析 -> 满足发展知识技能"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "满足发展知识技能 -> 在职培训"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定预算 -> 制订培训计划"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订培训计划 -> 审批"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N12",
+      "to": "N13",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 实施培训计划，condition=Y"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N12",
+      "to": "N11",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审批 -> 制订培训计划，condition=N"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实施培训计划 -> 参加培训"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N13",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实施培训计划 -> 培训测试"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训测试 -> 参加考试"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "参加考试 -> 总结"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "总结 -> 批转"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "批转 -> 培训效果评估"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训效果评估 -> 记录培训档案"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N15",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "培训测试 -> 培训效果评估"
+    }
+  ]
+}

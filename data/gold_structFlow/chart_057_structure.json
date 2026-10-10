@@ -1,0 +1,223 @@
+{
+  "chart_id": "chart_057",
+  "title": "员工考勤管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "各部门员工",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "部门主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "人事部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "主管领导",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "关联流程",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "制定考勤制度",
+      "full_label": "人事部制定考勤制度",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N2",
+      "text": "刷卡接受考勤",
+      "full_label": "各部门员工刷卡接受考勤",
+      "lane_id": "L1",
+      "responsible": "各部门员工"
+    },
+    {
+      "node_id": "N3",
+      "text": "不计考勤",
+      "full_label": "各部门员工不计考勤",
+      "lane_id": "L1",
+      "responsible": "各部门员工"
+    },
+    {
+      "node_id": "N4",
+      "text": "签署意见",
+      "full_label": "部门主管签署意见",
+      "lane_id": "L2",
+      "responsible": "部门主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "考勤统计",
+      "full_label": "人事部考勤统计",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N6",
+      "text": "有无异常",
+      "full_label": "人事部有无异常",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N7",
+      "text": "月末汇总编制考勤表",
+      "full_label": "人事部月末汇总编制考勤表",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N8",
+      "text": "考勤确认",
+      "full_label": "各部门员工考勤确认",
+      "lane_id": "L1",
+      "responsible": "各部门员工"
+    },
+    {
+      "node_id": "N9",
+      "text": "调查事实并提出处理意见",
+      "full_label": "人事部调查事实并提出处理意见",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N10",
+      "text": "审批",
+      "full_label": "主管领导审批",
+      "lane_id": "L4",
+      "responsible": "主管领导"
+    },
+    {
+      "node_id": "N11",
+      "text": "执行批示",
+      "full_label": "人事部执行批示",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    },
+    {
+      "node_id": "N12",
+      "text": "编制工资表，办理离职辞退等",
+      "full_label": "人事部编制工资表，办理离职辞退等",
+      "lane_id": "L3",
+      "responsible": "人事部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定考勤制度 -> 刷卡接受考勤"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "刷卡接受考勤 -> 不计考勤"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "不计考勤 -> 签署意见"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签署意见 -> 考勤统计"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "考勤统计 -> 有无异常"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "有无异常 -> 月末汇总编制考勤表，condition=N"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N9",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "有无异常 -> 调查事实并提出处理意见，condition=Y"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "考勤确认 -> 月末汇总编制考勤表"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "月末汇总编制考勤表 -> 考勤确认"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "调查事实并提出处理意见 -> 审批"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "同意",
+      "edge_type": "condition",
+      "description": "审批 -> 执行批示，condition=同意"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N9",
+      "condition": "不同意",
+      "edge_type": "loop",
+      "description": "审批 -> 调查事实并提出处理意见，condition=不同意"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "执行批示 -> 编制工资表，办理离职辞退等"
+    }
+  ]
+}

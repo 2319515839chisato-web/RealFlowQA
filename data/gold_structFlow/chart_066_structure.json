@@ -1,0 +1,659 @@
+{
+  "chart_id": "chart_066",
+  "title": "专利申请业务",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "ECI",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "CN代理人",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "外所",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "海外知产局",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "签订合同",
+      "full_label": "客户签订合同",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "提供信息",
+      "full_label": "客户提供信息",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N3",
+      "text": "信息确认",
+      "full_label": "ECI信息确认",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N4",
+      "text": "立案及监控时限",
+      "full_label": "ECI立案及监控时限",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N5",
+      "text": "选定外所、签订委托协议",
+      "full_label": "ECI选定外所、签订委托协议",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N6",
+      "text": "签订委托协议",
+      "full_label": "CN代理人签订委托协议",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N7",
+      "text": "准备并发送委托书",
+      "full_label": "CN代理人准备并发送委托书",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N8",
+      "text": "签署委托书",
+      "full_label": "客户签署委托书",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N9",
+      "text": "转发、检查、确认委托书",
+      "full_label": "ECI转发、检查、确认委托书",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N10",
+      "text": "所有申请资料确认",
+      "full_label": "客户所有申请资料确认",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N11",
+      "text": "所有申请资料确认",
+      "full_label": "ECI所有申请资料确认",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N12",
+      "text": "形式检查",
+      "full_label": "CN代理人形式检查",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N13",
+      "text": "提交申请、缴纳官费",
+      "full_label": "CN代理人提交申请、缴纳官费",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N14",
+      "text": "受理申请",
+      "full_label": "海外知识产权局受理申请",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N15",
+      "text": "提供申请递交回执",
+      "full_label": "海外知识产权局提供申请递交回执",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N16",
+      "text": "转发回执",
+      "full_label": "CN代理人转发回执",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N17",
+      "text": "转发回执 系统录入",
+      "full_label": "ECI转发回执",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N18",
+      "text": "确认递交回执",
+      "full_label": "客户确认递交回执",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N19",
+      "text": "提交指示",
+      "full_label": "ECI提交指示",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N20",
+      "text": "下达案件审查意见答复通知书（QA）",
+      "full_label": "海外知识产权局下达案件审查意见答复通知书（QA）",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N21",
+      "text": "接收转发OA",
+      "full_label": "CN代理人接收转发OA",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N22",
+      "text": "分析OA、提供答复方向",
+      "full_label": "CN代理人分析OA、提供答复方向",
+      "lane_id": "L3",
+      "responsible": "CN代理人"
+    },
+    {
+      "node_id": "N23",
+      "text": "汇报OA、建立时限监控并提供答复意见",
+      "full_label": "ECI汇报OA、建立时限监控并提供答复意见",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N24",
+      "text": "确认答复方向",
+      "full_label": "客户确认答复方向",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N25",
+      "text": "指示OA答复",
+      "full_label": "ECI指示OA答复",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N26",
+      "text": "指示OA答复稿确认",
+      "full_label": "CN代理人指示OA答复稿确认",
+      "lane_id": "L3",
+      "responsible": "CN代理人"
+    },
+    {
+      "node_id": "N27",
+      "text": "确认QA答复稿",
+      "full_label": "客户确认QA答复稿",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N28",
+      "text": "指示OA递交",
+      "full_label": "ECI指示OA递交",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N29",
+      "text": "形式调整、OA答复递交",
+      "full_label": "CN代理人形式调整、OA答复递交",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N30",
+      "text": "接收OA答复文件，提供答复回执，案件继续审查是否通过？",
+      "full_label": "海外知识产权局接收OA答复文件，提供答复回执，案件继续审查是否通过？",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N31",
+      "text": "转发OA答复回执",
+      "full_label": "CN代理人转发OA答复回执",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N32",
+      "text": "转发OA回执、录入系统",
+      "full_label": "ECI转发OA回执、录入系统",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N33",
+      "text": "确认OA答复回执",
+      "full_label": "客户确认OA答复回执",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N34",
+      "text": "汇报并建立时限监控",
+      "full_label": "ECI汇报并建立时限监控",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N35",
+      "text": "发出授权通知",
+      "full_label": "海外知识产权局发出授权通知",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N36",
+      "text": "转发通知",
+      "full_label": "CN代理人转发通知",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N37",
+      "text": "确认办理授权手续",
+      "full_label": "客户确认办理授权手续",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N38",
+      "text": "指示办理授权、汇报结案",
+      "full_label": "ECI指示办理授权、汇报结案",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    },
+    {
+      "node_id": "N39",
+      "text": "处理授权程序、发布证书",
+      "full_label": "海外知识产权局处理授权程序、发布证书",
+      "lane_id": "L5",
+      "responsible": "海外知产局"
+    },
+    {
+      "node_id": "N40",
+      "text": "办理授权程序、缴纳官费、返回报告",
+      "full_label": "CN代理人办理授权程序、缴纳官费、返回报告",
+      "lane_id": "L4",
+      "responsible": "外所"
+    },
+    {
+      "node_id": "N41",
+      "text": "确认证书",
+      "full_label": "客户确认证书",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N42",
+      "text": "整理案件，申请资料和指示函",
+      "full_label": "客户确认证书",
+      "lane_id": "L2",
+      "responsible": "ECI"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订合同 -> 提供信息"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提供信息 -> 信息确认"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "信息确认 -> 立案及监控时限"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立案及监控时限 -> 选定外所、签订委托协议"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "选定外所、签订委托协议 -> 签订委托协议"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订委托协议 -> 准备并发送委托书"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "准备并发送委托书 -> 形式检查"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签署委托书 -> 转发、检查、确认委托书"
+    },
+   {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发、检查、确认委托书 -> 签署委托书"
+    },
+
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发、检查、确认委托书 -> 所有申请资料确认"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "所有申请资料确认 -> 所有申请资料确认"
+    },
+   {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "所有申请资料确认 -> 所有申请资料确认"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "所有申请资料确认 -> 提交指示"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "形式检查 -> 所有申请资料确认"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提交申请、缴纳官费 -> 受理申请"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "受理申请 -> 提供申请递交回执"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提供申请递交回执 -> 转发回执"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发回执 -> 转发回执 系统录入"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发回执 系统录入 -> 确认递交回执"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N18",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认递交回执 -> 下达案件审查意见答复通知书（QA）"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下达案件审查意见答复通知书（QA） -> 接收转发OA"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接收转发OA -> 分析OA、提供答复方向"
+    },
+    {
+      "edge_id": "E23",
+
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "分析OA、提供答复方向 -> 汇报OA、建立时限监控并提供答复意见"
+    },
+    {
+      "edge_id": "E24", 
+      "from": "N23",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇报OA、建立时限监控并提供答复意见 -> 确认答复方向"    
+    },
+    {
+      "edge_id": "E25",
+      "from": "N24",
+      "to": "N25",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认答复方向 -> 指示OA答复"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N25",
+      "to": "N26",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "指示OA答复 -> 指示OA答复稿确认" 
+    },
+    {
+      "edge_id": "E27",
+      "from": "N26",
+      "to": "N27",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "指示OA答复稿确认 -> 确认QA答复稿" 
+    },
+    {
+      "edge_id": "E28",
+      "from": "N27",
+      "to": "N28",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认QA答复稿 -> 指示OA递交"
+    },
+    {
+      "edge_id": "E29",
+     "from": "N28",
+      "to": "N29",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "指示OA递交 -> 形式调整、OA答复递交" 
+    },
+    {
+      "edge_id": "E30",
+     "from": "N29",
+      "to": "N30",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "形式调整、OA答复递交 -> 接收OA答复文件，提供答复回执，案件继续审查是否通过？" 
+    },
+    {
+      "edge_id": "E31",
+     "from": "N30",
+      "to": "N31",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接收OA答复文件，提供答复回执，案件继续审查是否通过？ -> 转发OA答复回执" 
+    },
+    {
+      "edge_id": "E32",
+      "from": "N31",
+      "to": "N32",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发OA答复回执 -> 转发OA回执、录入系统"
+    },
+    {
+      "edge_id": "E33",
+      "from": "N32",
+      "to": "N33",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发OA回执、录入系统 -> 确认OA答复回执"
+    },
+    {
+      "edge_id": "E34",
+      "from": "N30",
+      "to": "N35",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接收OA答复文件，提供答复回执，案件继续审查是否通过？ -> 发出授权通知" 
+    },
+    {
+      "edge_id": "E35",
+      "from": "N35",
+      "to": "N36",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发出授权通知 -> 转发通知"
+    },
+    {
+      "edge_id": "E36",
+      "from": "N36",
+      "to": "N34",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "转发通知 -> 汇报并建立时限监控"
+    },
+    {
+      "edge_id": "E37",
+      "from": "N34",
+      "to": "N37",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇报并建立时限监控 -> 确认办理授权手续"
+    },
+    {
+      "edge_id": "E38",
+      "from": "N37",
+      "to": "N39",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认办理授权手续 -> 处理授权程序、发布证书"
+    },
+    {
+      "edge_id": "E39",
+      "from": "N39",
+      "to": "N40",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "处理授权程序、发布证书 -> 办理授权程序、缴纳官费、返回报告"
+    },
+    {
+      "edge_id": "E40",
+      "from": "N40",
+      "to": "N38",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理授权程序、缴纳官费、返回报告 -> 指示办理授权、汇报结案"
+    },
+    {
+      "edge_id": "E41",
+      "from": "N38",
+      "to": "N41",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "指示办理授权、汇报结案 -> 确认证书"
+    }
+  ]
+}

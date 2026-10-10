@@ -1,0 +1,245 @@
+{
+  "chart_id": "chart_002",
+  "title": "办公用品管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "相关部门/人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "行政部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "行政经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "提出办公用品采购需求",
+      "full_label": "相关部门/人员提出办公用品采购需求",
+      "lane_id": "L1",
+      "responsible": "相关部门/人员"
+    },
+    {
+      "node_id": "N2",
+      "text": "汇总需求",
+      "full_label": "行政部汇总需求",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N3",
+      "text": "编制办公用品需求清单",
+      "full_label": "行政部编制办公用品需求清单",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N4",
+      "text": "审批",
+      "full_label": "行政经理审批",
+      "lane_id": "L3",
+      "responsible": "行政经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "进行市场调查询价",
+      "full_label": "行政部进行市场调查询价",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N6",
+      "text": "编制采购计划与预算",
+      "full_label": "行政部编制采购计划与预算",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N7",
+      "text": "审批",
+      "full_label": "行政经理审批",
+      "lane_id": "L3",
+      "responsible": "行政经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "审批",
+      "full_label": "财务部审批",
+      "lane_id": "L4",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N9",
+      "text": "采购",
+      "full_label": "行政部采购",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N10",
+      "text": "验收入库",
+      "full_label": "行政部验收入库",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N11",
+      "text": "发放领用",
+      "full_label": "行政部发放领用",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    },
+    {
+      "node_id": "N12",
+      "text": "签字领用",
+      "full_label": "相关部门/人员签字领用",
+      "lane_id": "L1",
+      "responsible": "相关部门/人员"
+    },
+    {
+      "node_id": "N13",
+      "text": "归还",
+      "full_label": "相关部门/人员归还",
+      "lane_id": "L1",
+      "responsible": "相关部门/人员"
+    },
+    {
+      "node_id": "N14",
+      "text": "月底清点",
+      "full_label": "行政部月底清点",
+      "lane_id": "L2",
+      "responsible": "行政部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出办公用品采购需求 -> 汇总需求"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇总需求 -> 编制办公用品需求清单"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制办公用品需求清单 -> 审批"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 进行市场调查询价"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "进行市场调查询价 -> 编制采购计划与预算"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制采购计划与预算 -> 审批"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 审批"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 采购"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购 -> 验收入库"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "验收入库 -> 发放领用"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发放领用 -> 签字领用"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签字领用 -> 归还"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "归还 -> 验收入库"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发放领用 -> 月底清点"
+    }
+  ]
+}

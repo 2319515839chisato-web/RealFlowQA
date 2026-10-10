@@ -1,0 +1,387 @@
+{
+  "chart_id": "chart_065",
+  "title": "AI数据服务",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "解决方案",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "项目执行",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "需求文件",
+      "full_label": "客户需求文件",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "定位客户领域",
+      "full_label": "解决方案定位客户领域",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N3",
+      "text": "客户产品应用场景",
+      "full_label": "解决方案客户产品应用场景",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N4",
+      "text": "解读客户需求",
+      "full_label": "解决方案解读客户需求",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N5",
+      "text": "确定数据服务类型",
+      "full_label": "解决方案确定数据服务类型",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N6",
+      "text": "数据总量计划、质量验收标准、数据处理规则",
+      "full_label": "解决方案数据总量计划、质量验收标准、数据处理规则",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N7",
+      "text": "工具要求、保密级别",
+      "full_label": "解决方案工具要求、保密级别",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N8",
+      "text": "试标",
+      "full_label": "解决方案试标",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N9",
+      "text": "项目预算、资源需求",
+      "full_label": "解决方案项目预算、资源需求",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N10",
+      "text": "定制项目解决方案",
+      "full_label": "解决方案定制项目解决方案",
+      "lane_id": "L2",
+      "responsible": "解决方案"
+    },
+    {
+      "node_id": "N11",
+      "text": "签署合同、保密协议",
+      "full_label": "项目执行签署合同、保密协议",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N12",
+      "text": "确定最终规则及验收标准",
+      "full_label": "项目执行确定最终规则及验收标准",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N13",
+      "text": "制定项目计划",
+      "full_label": "项目执行制定项目计划",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N14",
+      "text": "评审",
+      "full_label": "项目执行评审",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N15",
+      "text": "确认计划",
+      "full_label": "客户确认计划",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N16",
+      "text": "修改计划",
+      "full_label": "项目执行修改计划",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N17",
+      "text": "立项执行",
+      "full_label": "项目执行立项执行",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N18",
+      "text": "标注数据",
+      "full_label": "项目执行标注数据",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N19",
+      "text": "质检数据",
+      "full_label": "项目执行质检数据",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N20",
+      "text": "格式检查",
+      "full_label": "项目执行格式检查",
+      "lane_id": "L3",
+      "responsible": "项目执行"
+    },
+    {
+      "node_id": "N21",
+      "text": "项目交付",
+      "full_label": "客户项目交付",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N22",
+      "text": "内容备份",
+      "full_label": "客户内容备份",
+      "lane_id": "L1",
+      "responsible": "客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "需求文件 -> 定位客户领域"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定位客户领域 -> 客户产品应用场景"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户产品应用场景 -> 解读客户需求"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "解读客户需求 -> 确定数据服务类型"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定数据服务类型 -> 数据总量计划、质量验收标准、数据处理规则"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定数据服务类型 -> 工具要求、保密级别"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定数据服务类型 -> 项目预算、资源需求"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "数据总量计划、质量验收标准、数据处理规则 -> 试标"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "工具要求、保密级别 -> 试标"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "试标 -> 定制项目解决方案"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目预算、资源需求 -> 定制项目解决方案"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定制项目解决方案 -> 签署合同、保密协议"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定制项目解决方案 -> 确定最终规则及验收标准"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签署合同、保密协议 -> 制定项目计划"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定最终规则及验收标准 -> 制定项目计划"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定项目计划 -> 评审"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 确认计划"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N15",
+      "to": "N17",
+      "condition": "通过",
+      "edge_type": "condition",
+      "description": "确认计划 -> 立项执行，condition=通过"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N15",
+      "to": "N16",
+      "condition": "不通过",
+      "edge_type": "condition",
+      "description": "确认计划 -> 修改计划，condition=不通过"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N16",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "修改计划 -> 确认计划"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项执行 -> 标注数据"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "标注数据 -> 质检数据"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N19",
+      "to": "N20",
+      "condition": "通过",
+      "edge_type": "condition",
+      "description": "质检数据 -> 格式检查，condition=通过"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "格式检查 -> 项目交付"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N19",
+      "to": "N18",
+      "condition": "不通过",
+      "edge_type": "loop",
+      "description": "质检数据 -> 标注数据，condition=不通过"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目交付 -> 内容备份"
+    }
+  ]
+}

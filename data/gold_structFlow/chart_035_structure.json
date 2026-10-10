@@ -1,0 +1,260 @@
+{
+  "chart_id": "chart_035",
+  "title": "生产订单管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "业务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "生产部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "生产经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "订单接收",
+      "full_label": "业务部订单接收",
+      "lane_id": "L1",
+      "responsible": "业务部"
+    },
+    {
+      "node_id": "N2",
+      "text": "组织评审",
+      "full_label": "业务部组织评审",
+      "lane_id": "L1",
+      "responsible": "业务部"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "生产经理审批",
+      "lane_id": "L3",
+      "responsible": "生产经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "订单审批处理",
+      "full_label": "生产经理订单审批处理",
+      "lane_id": "L3",
+      "responsible": "生产经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "下达订单",
+      "full_label": "生产部下达订单",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N6",
+      "text": "制订生产计划",
+      "full_label": "生产部制订生产计划",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N7",
+      "text": "物料供应",
+      "full_label": "相关部门物料供应",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N8",
+      "text": "生产制造",
+      "full_label": "生产部生产制造",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N9",
+      "text": "订单跟踪",
+      "full_label": "业务部订单跟踪",
+      "lane_id": "L1",
+      "responsible": "业务部"
+    },
+    {
+      "node_id": "N10",
+      "text": "品质检验",
+      "full_label": "相关部门品质检验",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N11",
+      "text": "入库",
+      "full_label": "相关部门入库",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N12",
+      "text": "安排发货",
+      "full_label": "业务部安排发货",
+      "lane_id": "L1",
+      "responsible": "业务部"
+    },
+    {
+      "node_id": "N13",
+      "text": "发运",
+      "full_label": "相关部门发运",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N14",
+      "text": "催款",
+      "full_label": "相关部门催款",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N15",
+      "text": "售后服务",
+      "full_label": "业务部售后服务",
+      "lane_id": "L1",
+      "responsible": "业务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单接收 -> 组织评审"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织评审 -> 审批"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审批 -> 订单审批处理，condition=是"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N2",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "审批 -> 组织评审，condition=否"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单审批处理 -> 下达订单"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下达订单 -> 制订生产计划"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订生产计划 -> 物料供应"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物料供应 -> 生产制造"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单跟踪 -> 生产制造"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产制造 -> 品质检验"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "品质检验 -> 入库"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "入库 -> 发运"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "安排发货 -> 发运"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发运 -> 催款"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "催款 -> 售后服务"
+    }
+  ]
+}

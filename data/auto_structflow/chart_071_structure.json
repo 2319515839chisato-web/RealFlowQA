@@ -1,0 +1,438 @@
+{
+  "chart_id": "chart_071",
+  "title": "项目型销售流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "内/外销部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "营销企划部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "营销管理部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "营销副总",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "技术中心",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "项目管理部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L7",
+      "name": "计划调度部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L8",
+      "name": "仓储物流部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L9",
+      "name": "成本控制部/财务部",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "客户需求信息收集",
+      "full_label": "内/外销部客户需求信息收集",
+      "lane_id": "L1",
+      "responsible": "内/外销部"
+    },
+    {
+      "node_id": "N2",
+      "text": "投标技术支持",
+      "full_label": "营销企划部投标技术支持",
+      "lane_id": "L2",
+      "responsible": "营销企划部"
+    },
+    {
+      "node_id": "N3",
+      "text": "投标管理流程",
+      "full_label": "营销企划部投标管理流程",
+      "lane_id": "L2",
+      "responsible": "营销企划部"
+    },
+    {
+      "node_id": "N4",
+      "text": "处理决策",
+      "full_label": "营销副总处理决策",
+      "lane_id": "L4",
+      "responsible": "营销副总"
+    },
+    {
+      "node_id": "N5",
+      "text": "说明放弃订单原因并存档",
+      "full_label": "营销副总说明放弃订单原因并存档",
+      "lane_id": "L4",
+      "responsible": "营销副总"
+    },
+    {
+      "node_id": "N6",
+      "text": "订单签定",
+      "full_label": "内/外销部订单签定",
+      "lane_id": "L1",
+      "responsible": "内/外销部"
+    },
+    {
+      "node_id": "N7",
+      "text": "订单复核",
+      "full_label": "营销管理部订单复核",
+      "lane_id": "L3",
+      "responsible": "营销管理部"
+    },
+    {
+      "node_id": "N8",
+      "text": "产品订单",
+      "full_label": "营销管理部产品订单",
+      "lane_id": "L3",
+      "responsible": "营销管理部"
+    },
+    {
+      "node_id": "N9",
+      "text": "项目汇总及分配",
+      "full_label": "项目管理部项目汇总及分配",
+      "lane_id": "L6",
+      "responsible": "项目管理部"
+    },
+    {
+      "node_id": "N10",
+      "text": "项目实施计划",
+      "full_label": "项目管理部项目实施计划",
+      "lane_id": "L6",
+      "responsible": "项目管理部"
+    },
+    {
+      "node_id": "N11",
+      "text": "召开项目投产会",
+      "full_label": "项目管理部召开项目投产会",
+      "lane_id": "L6",
+      "responsible": "项目管理部"
+    },
+    {
+      "node_id": "N12",
+      "text": "技术资料准备",
+      "full_label": "技术中心技术资料准备",
+      "lane_id": "L5",
+      "responsible": "技术中心"
+    },
+    {
+      "node_id": "N13",
+      "text": "产品研发及工艺设计流程",
+      "full_label": "技术中心产品研发及工艺设计流程",
+      "lane_id": "L5",
+      "responsible": "技术中心"
+    },
+    {
+      "node_id": "N14",
+      "text": "编制主生产计划草案",
+      "full_label": "计划调度部编制主生产计划草案",
+      "lane_id": "L7",
+      "responsible": "计划调度部"
+    },
+    {
+      "node_id": "N15",
+      "text": "组织召开生产计划评审会",
+      "full_label": "计划调度部组织召开生产计划评审会",
+      "lane_id": "L7",
+      "responsible": "计划调度部"
+    },
+    {
+      "node_id": "N16",
+      "text": "主生产计划表",
+      "full_label": "计划调度部主生产计划表",
+      "lane_id": "L7",
+      "responsible": "计划调度部"
+    },
+    {
+      "node_id": "N17",
+      "text": "生产计划与实施管理流程",
+      "full_label": "计划调度部生产计划与实施管理流程",
+      "lane_id": "L7",
+      "responsible": "计划调度部"
+    },
+    {
+      "node_id": "N18",
+      "text": "成本核算与控制",
+      "full_label": "成本控制部/财务部成本核算与控制",
+      "lane_id": "L9",
+      "responsible": "成本控制部/财务部"
+    },
+    {
+      "node_id": "N19",
+      "text": "成本控制管理流程",
+      "full_label": "成本控制部/财务部成本控制管理流程",
+      "lane_id": "L9",
+      "responsible": "成本控制部/财务部"
+    },
+    {
+      "node_id": "N20",
+      "text": "成品入库及发运",
+      "full_label": "仓储物流部成品入库及发运",
+      "lane_id": "L8",
+      "responsible": "仓储物流部"
+    },
+    {
+      "node_id": "N21",
+      "text": "仓库管理流程",
+      "full_label": "仓储物流部仓库管理流程",
+      "lane_id": "L8",
+      "responsible": "仓储物流部"
+    },
+    {
+      "node_id": "N22",
+      "text": "设备安装及交付",
+      "full_label": "项目管理部设备安装及交付",
+      "lane_id": "L6",
+      "responsible": "项目管理部"
+    },
+    {
+      "node_id": "N23",
+      "text": "货款回收",
+      "full_label": "成本控制部/财务部货款回收",
+      "lane_id": "L9",
+      "responsible": "成本控制部/财务部"
+    },
+    {
+      "node_id": "N24",
+      "text": "主项目订单结案及资料归档",
+      "full_label": "项目管理部主项目订单结案及资料归档",
+      "lane_id": "L6",
+      "responsible": "项目管理部"
+    },
+    {
+      "node_id": "N25",
+      "text": "配件订单结案及资料归档",
+      "full_label": "营销管理部配件订单结案及资料归档",
+      "lane_id": "L3",
+      "responsible": "营销管理部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户需求信息收集 -> 投标技术支持"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "投标技术支持 -> 投标管理流程"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "投标管理流程 -> 处理决策"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "处理决策 -> 说明放弃订单原因并存档，condition=N"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N6",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "处理决策 -> 订单签定，condition=Y"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单签定 -> 订单复核"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单复核 -> 产品订单"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "主项目",
+      "edge_type": "condition",
+      "description": "产品订单 -> 项目汇总及分配，condition=主项目"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N12",
+      "condition": "配件（小项目）",
+      "edge_type": "condition",
+      "description": "产品订单 -> 技术资料准备，condition=配件（小项目）"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目汇总及分配 -> 项目实施计划"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目实施计划 -> 召开项目投产会"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "召开项目投产会 -> 编制主生产计划草案"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "技术资料准备 -> 产品研发及工艺设计流程"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品研发及工艺设计流程 -> 主生产计划表"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制主生产计划草案 -> 组织召开生产计划评审会"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织召开生产计划评审会 -> 主生产计划表"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "主生产计划表 -> 生产计划与实施管理流程"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "主生产计划表 -> 成本核算与控制"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "成本核算与控制 -> 成本控制管理流程"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N17",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产计划与实施管理流程 -> 成品入库及发运"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "成本控制管理流程 -> 成品入库及发运"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "成品入库及发运 -> 仓库管理流程"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N21",
+      "to": "N22",
+      "condition": "设备",
+      "edge_type": "condition",
+      "description": "仓库管理流程 -> 设备安装及交付，condition=设备"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设备安装及交付 -> 货款回收"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N23",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "货款回收 -> 主项目订单结案及资料归档"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N13",
+      "to": "N25",
+      "condition": "配件（小项目）",
+      "edge_type": "normal",
+      "description": "产品研发及工艺设计流程 -> 配件订单结案及资料归档，condition=配件（小项目）"
+    }
+  ]
+}

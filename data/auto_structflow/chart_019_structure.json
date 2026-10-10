@@ -1,0 +1,359 @@
+{
+  "chart_id": "chart_019",
+  "title": "产品研发评估流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "研发经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "评估小组",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "研发人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "组建评估小组",
+      "full_label": "研发经理组建评估小组",
+      "lane_id": "L2",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N2",
+      "text": "产品评估前期准备",
+      "full_label": "评估小组产品评估前期准备",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N3",
+      "text": "提交产品相关研发资料",
+      "full_label": "研发人员提交产品相关研发资料",
+      "lane_id": "L4",
+      "responsible": "研发人员"
+    },
+    {
+      "node_id": "N4",
+      "text": "产品创意评估",
+      "full_label": "评估小组产品创意评估",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N5",
+      "text": "进行产品创意设计",
+      "full_label": "研发人员进行产品创意设计",
+      "lane_id": "L4",
+      "responsible": "研发人员"
+    },
+    {
+      "node_id": "N6",
+      "text": "合格",
+      "full_label": "评估小组合格",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N7",
+      "text": "实体设计评估",
+      "full_label": "评估小组实体设计评估",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N8",
+      "text": "进行产品实体设计",
+      "full_label": "研发人员进行产品实体设计",
+      "lane_id": "L4",
+      "responsible": "研发人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "合格",
+      "full_label": "评估小组合格",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N10",
+      "text": "附加物设计评估",
+      "full_label": "评估小组附加物设计评估",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N11",
+      "text": "进行附加物设计",
+      "full_label": "研发人员进行附加物设计",
+      "lane_id": "L4",
+      "responsible": "研发人员"
+    },
+    {
+      "node_id": "N12",
+      "text": "合格",
+      "full_label": "评估小组合格",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N13",
+      "text": "择优申请试销",
+      "full_label": "研发经理择优申请试销",
+      "lane_id": "L2",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "产品试销评估",
+      "full_label": "评估小组产品试销评估",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N16",
+      "text": "合格",
+      "full_label": "评估小组合格",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N17",
+      "text": "择优申请上市",
+      "full_label": "研发经理择优申请上市",
+      "lane_id": "L2",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N18",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N19",
+      "text": "产品上市评估",
+      "full_label": "评估小组产品上市评估",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    },
+    {
+      "node_id": "N20",
+      "text": "资料归档",
+      "full_label": "评估小组资料归档",
+      "lane_id": "L3",
+      "responsible": "评估小组"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组建评估小组 -> 产品评估前期准备"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N3",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提交产品相关研发资料 -> 产品评估前期准备"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品评估前期准备 -> 产品创意评估"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品创意评估 -> 合格"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "condition",
+      "description": "合格 -> 实体设计评估"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "合格 -> 进行产品创意设计"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "进行产品创意设计 -> 产品创意评估"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实体设计评估 -> 合格"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "condition",
+      "description": "合格 -> 附加物设计评估"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "合格 -> 进行产品实体设计"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N8",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "进行产品实体设计 -> 实体设计评估"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "附加物设计评估 -> 合格"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "condition",
+      "description": "合格 -> 择优申请试销"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "合格 -> 进行附加物设计"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N11",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "进行附加物设计 -> 附加物设计评估"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "择优申请试销 -> 审批"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 产品试销评估"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品试销评估 -> 合格"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "condition",
+      "description": "合格 -> 择优申请上市"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "择优申请上市 -> 审批"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 产品上市评估"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品上市评估 -> 资料归档"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N20",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "资料归档 -> 合格"
+    }
+  ]
+}

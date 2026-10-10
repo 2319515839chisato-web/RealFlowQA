@@ -1,0 +1,185 @@
+{
+  "chart_id": "chart_079",
+  "title": "原材料采购流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "生产部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "质检部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "供应商",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "财务部",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "生产任务书",
+      "full_label": "生产部生产任务书",
+      "lane_id": "L1",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N2",
+      "text": "采购计划",
+      "full_label": "采购部采购计划",
+      "lane_id": "L2",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N3",
+      "text": "供应商选择",
+      "full_label": "采购部供应商选择",
+      "lane_id": "L2",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N4",
+      "text": "采购协议",
+      "full_label": "供应商、财务部采购协议",
+      "lane_id": "L4",
+      "responsible": "供应商、财务部"
+    },
+    {
+      "node_id": "N5",
+      "text": "付款",
+      "full_label": "财务部付款",
+      "lane_id": "L5",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N6",
+      "text": "收取发票",
+      "full_label": "财务部收取发票",
+      "lane_id": "L5",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "产品发货",
+      "full_label": "供应商产品发货",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    },
+    {
+      "node_id": "N8",
+      "text": "质检",
+      "full_label": "质检部质检",
+      "lane_id": "L3",
+      "responsible": "质检部"
+    },
+    {
+      "node_id": "N9",
+      "text": "入库",
+      "full_label": "采购部入库",
+      "lane_id": "L2",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N10",
+      "text": "退货",
+      "full_label": "供应商退货",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产任务书 -> 采购计划"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购计划 -> 供应商选择"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "供应商选择 -> 采购协议"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购协议 -> 付款"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "付款 -> 收取发票"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "付款 -> 产品发货"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品发货 -> 质检"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "合格",
+      "edge_type": "condition",
+      "description": "质检 -> 入库，condition=合格"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N7",
+      "condition": "不合格",
+      "edge_type": "loop",
+      "description": "质检 -> 产品发货，condition=不合格"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N10",
+      "condition": "不合格",
+      "edge_type": "condition",
+      "description": "质检 -> 退货，condition=不合格"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "chart_id": "chart_028",
+  "title": "记账凭证会计核算流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "会计",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "业务发生后，取得原始凭证",
+      "full_label": "相关部门业务发生后，取得原始凭证",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "汇总审核原始凭证",
+      "full_label": "会计汇总审核原始凭证",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N3",
+      "text": "编制记账凭证",
+      "full_label": "会计编制记账凭证",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N4",
+      "text": "登记现金、银行存款日记账",
+      "full_label": "会计登记现金、银行存款日记账",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N5",
+      "text": "登记明细账",
+      "full_label": "会计登记明细账",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N6",
+      "text": "登记总账",
+      "full_label": "会计登记总账",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N7",
+      "text": "核对账目",
+      "full_label": "会计核对账目",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N8",
+      "text": "编制会计报表",
+      "full_label": "会计编制会计报表",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N9",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N10",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "存档",
+      "full_label": "会计存档",
+      "lane_id": "L3",
+      "responsible": "会计"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "业务发生后，取得原始凭证 -> 汇总审核原始凭证"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇总审核原始凭证 -> 编制记账凭证"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制记账凭证 -> 登记现金、银行存款日记账"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记现金、银行存款日记账 -> 登记明细账"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记明细账 -> 登记总账"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记总账 -> 核对账目"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "核对账目 -> 编制会计报表"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制会计报表 -> 审核"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 存档"
+    }
+  ]
+}

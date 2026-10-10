@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and credentials
+.env
+.env.*
+*.key
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temporary files
+~$*.xlsx
+~$*.docx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Model request caches and raw responses
+raw_responses/
+request_audit/
+
+# Generated structure outputs
+structure/

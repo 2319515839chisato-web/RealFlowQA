@@ -1,0 +1,201 @@
+{
+  "chart_id": "chart_030",
+  "title": "客户开发管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "节点",
+      "description": "非执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "销售经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "销售主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "销售人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "确定新客户范围",
+      "full_label": "销售主管确定新客户范围",
+      "lane_id": "L3",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N2",
+      "text": "选定具体新客户",
+      "full_label": "销售主管选定具体新客户",
+      "lane_id": "L3",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N3",
+      "text": "潜在客户调查",
+      "full_label": "销售人员潜在客户调查",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N4",
+      "text": "筛选评价",
+      "full_label": "销售人员筛选评价",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N5",
+      "text": "合格?",
+      "full_label": "销售人员合格?",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N6",
+      "text": "提出开发申请，制订开发计划",
+      "full_label": "销售人员提出开发申请，制订开发计划",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "审核",
+      "full_label": "销售主管审核",
+      "lane_id": "L3",
+      "responsible": "销售主管"
+    },
+    {
+      "node_id": "N8",
+      "text": "审核",
+      "full_label": "销售经理审核",
+      "lane_id": "L2",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "实施开发计划",
+      "full_label": "销售人员实施开发计划",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    },
+    {
+      "node_id": "N10",
+      "text": "定期汇报",
+      "full_label": "销售人员定期汇报",
+      "lane_id": "L4",
+      "responsible": "销售人员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定新客户范围 -> 选定具体新客户"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "选定具体新客户 -> 潜在客户调查"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "潜在客户调查 -> 筛选评价"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "筛选评价 -> 合格?"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "合格? -> 提出开发申请，制订开发计划，condition=Y"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N3",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "合格? -> 潜在客户调查，condition=N"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出开发申请，制订开发计划 -> 审核"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审核，condition=Y"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N9",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "审核 -> 实施开发计划，condition=N"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 实施开发计划，condition=Y"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N8",
+      "to": "N3",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 潜在客户调查，condition=N"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实施开发计划 -> 定期汇报"
+    }
+  ]
+}

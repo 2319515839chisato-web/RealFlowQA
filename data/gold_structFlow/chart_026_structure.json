@@ -1,0 +1,267 @@
+{
+  "chart_id": "chart_026",
+  "title": "",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "用户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "职能",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "审核",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "申购实验材料",
+      "full_label": "用户申购实验材料",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N2",
+      "text": "化学品？",
+      "full_label": "用户化学品？",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N3",
+      "text": "平台采购？",
+      "full_label": "用户平台采购？",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N4",
+      "text": "采购平台",
+      "full_label": "职能采购平台",
+      "lane_id": "L2",
+      "responsible": "职能"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批类",
+      "full_label": "职能审批类",
+      "lane_id": "L2",
+      "responsible": "职能"
+    },
+    {
+      "node_id": "N6",
+      "text": "学院审核",
+      "full_label": "学院审核",
+      "lane_id": "L3",
+      "responsible": "审核"
+    },
+    {
+      "node_id": "N7",
+      "text": "安全办审核",
+      "full_label": "安全办审核",
+      "lane_id": "L3",
+      "responsible": "审核"
+    },
+    {
+      "node_id": "N8",
+      "text": "实装处报备",
+      "full_label": "实装处报备",
+      "lane_id": "L3",
+      "responsible": "审核"
+    },
+    {
+      "node_id": "N9",
+      "text": "≥招标限额",
+      "full_label": "职能≥招标限额",
+      "lane_id": "L2",
+      "responsible": "职能"
+    },
+    {
+      "node_id": "N10",
+      "text": "采购中心招标备案",
+      "full_label": "采购中心招标备案",
+      "lane_id": "L3",
+      "responsible": "审核"
+    },
+    {
+      "node_id": "N11",
+      "text": "≥合同限额",
+      "full_label": "职能≥合同限额",
+      "lane_id": "L2",
+      "responsible": "职能"
+    },
+    {
+      "node_id": "N12",
+      "text": "实装处合同审核",
+      "full_label": "实装处合同审核",
+      "lane_id": "L3",
+      "responsible": "审核"
+    },
+    {
+      "node_id": "N13",
+      "text": "采购实施",
+      "full_label": "职能采购实施",
+      "lane_id": "L2",
+      "responsible": "职能"
+    },
+    {
+      "node_id": "N14",
+      "text": "验收报销",
+      "full_label": "用户验收报销",
+      "lane_id": "L1",
+      "responsible": "用户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "申购实验材料 -> 化学品？"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "化学品？ -> 采购平台，condition=是"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "化学品？ -> 平台采购？"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "平台采购？ -> 采购平台，condition=是"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购平台 -> 审批类"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审批类 -> 学院审核，condition=是"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "学院审核 -> 安全办审核"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "安全办审核 -> 实装处报备"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实装处报备 -> ≥招标限额"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N5",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批类 -> ≥招标限额"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "≥招标限额 -> 采购中心招标备案，condition=是"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购中心招标备案 -> 实装处合同审核"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N9",
+      "to": "N11",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "≥招标限额 -> ≥合同限额，condition=否"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N12",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "≥合同限额 -> 实装处合同审核，condition=是"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N11",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "≥合同限额 -> 采购实施"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "实装处合同审核 -> 采购实施"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购实施 -> 验收报销"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N3",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "平台采购？ -> ≥招标限额"
+    }
+  ]
+}

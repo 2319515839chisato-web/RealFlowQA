@@ -1,0 +1,260 @@
+{
+  "chart_id": "chart_022",
+  "title": "发货工作管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "销售部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "仓储部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "合同电话订单",
+      "full_label": "客户合同电话订单",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "接到订单",
+      "full_label": "销售部接到订单",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "客户审批",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核调查",
+      "full_label": "销售部审核调查",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N5",
+      "text": "要求打款",
+      "full_label": "销售部要求打款",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N6",
+      "text": "确认货款到账",
+      "full_label": "财务部确认货款到账",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "发货准备",
+      "full_label": "销售部发货准备",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N8",
+      "text": "审批",
+      "full_label": "销售部审批",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N9",
+      "text": "备案",
+      "full_label": "财务部备案",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N10",
+      "text": "清点装箱",
+      "full_label": "仓储部清点装箱",
+      "lane_id": "L4",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N11",
+      "text": "安排发货",
+      "full_label": "仓储部安排发货",
+      "lane_id": "L4",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N12",
+      "text": "开发票",
+      "full_label": "财务部开发票",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N13",
+      "text": "发货寄发票",
+      "full_label": "销售部发货寄发票",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N14",
+      "text": "收货",
+      "full_label": "客户收货",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N15",
+      "text": "反馈",
+      "full_label": "客户反馈",
+      "lane_id": "L1",
+      "responsible": "客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "合同电话订单 -> 接到订单"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "接到订单 -> 审核调查，condition=Y"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 审核调查，condition=Y"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N3",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核调查 -> 审批，condition=N"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核调查 -> 要求打款"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "要求打款 -> 确认货款到账"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认货款到账 -> 发货准备"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发货准备 -> 审批"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 备案"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "备案 -> 清点装箱"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "清点装箱 -> 安排发货"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "安排发货 -> 开发票"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开发票 -> 发货寄发票"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发货寄发票 -> 收货"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "收货 -> 反馈"
+    }
+  ]
+}

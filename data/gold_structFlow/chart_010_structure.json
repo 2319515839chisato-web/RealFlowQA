@@ -1,0 +1,350 @@
+{
+  "chart_id": "chart_010",
+  "title": "采购管理总流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "编制采购计划",
+      "full_label": "采购部编制采购计划",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N2",
+      "text": "申请采购",
+      "full_label": "相关部门申请采购",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N3",
+      "text": "审核",
+      "full_label": "财务部审核",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N4",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "询价议价",
+      "full_label": "采购部询价议价",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N6",
+      "text": "配合",
+      "full_label": "相关部门配合",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N7",
+      "text": "选择供应商",
+      "full_label": "采购部选择供应商",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N8",
+      "text": "起草合同",
+      "full_label": "采购部起草合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N9",
+      "text": "审核",
+      "full_label": "财务部审核",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N10",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "签订合同",
+      "full_label": "采购部签订合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N12",
+      "text": "下订购单",
+      "full_label": "采购部下订购单",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N13",
+      "text": "备货",
+      "full_label": "相关部门备货",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N14",
+      "text": "跟催监督",
+      "full_label": "采购部跟催监督",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N15",
+      "text": "组织验收",
+      "full_label": "采购部组织验收",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N16",
+      "text": "合格",
+      "full_label": "采购部合格",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N17",
+      "text": "办理退货",
+      "full_label": "采购部办理退货",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N18",
+      "text": "办理结算",
+      "full_label": "财务部办理结算",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N19",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N20",
+      "text": "付款入账",
+      "full_label": "财务部付款入账",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N21",
+      "text": "绩效评价",
+      "full_label": "采购部绩效评价",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N2",
+      "to": "N1",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "申请采购 -> 编制采购计划"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N1",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制采购计划 -> 审核"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 询价议价"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N6",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配合 ->询价议价 "
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "询价议价 -> 选择供应商"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "选择供应商 -> 起草合同"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "起草合同 -> 审核"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 签订合同"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订合同 -> 下订购单"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下订购单 -> 备货"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "备货 -> 组织验收"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下订购单 -> 跟催监督"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "跟催监督 -> 组织验收"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织验收 -> 合格"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N16",
+      "to": "N18",
+      "condition": "合格",
+      "edge_type": "condition",
+      "description": "合格 -> 办理结算，condition=合格"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N17",
+      "condition": "不合格",
+      "edge_type": "condition",
+      "description": "合格 -> 办理退货，condition=不合格"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理结算 -> 审批"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 付款入账"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "付款入账 -> 绩效评价"
+    }
+  ]
+}

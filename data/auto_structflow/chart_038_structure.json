@@ -1,0 +1,147 @@
+{
+  "chart_id": "chart_038",
+  "title": "生产物料领用流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "生产组长",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "配料员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "原料库主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "生产工人",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "生产准备",
+      "full_label": "生产组长生产准备",
+      "lane_id": "L1",
+      "responsible": "生产组长"
+    },
+    {
+      "node_id": "N2",
+      "text": "通知领料并转单",
+      "full_label": "生产组长通知领料并转单",
+      "lane_id": "L1",
+      "responsible": "生产组长"
+    },
+    {
+      "node_id": "N3",
+      "text": "领料",
+      "full_label": "配料员领料",
+      "lane_id": "L2",
+      "responsible": "配料员"
+    },
+    {
+      "node_id": "N4",
+      "text": "签字发料",
+      "full_label": "原料库主管签字发料",
+      "lane_id": "L3",
+      "responsible": "原料库主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "监督复核",
+      "full_label": "配料员监督复核",
+      "lane_id": "L2",
+      "responsible": "配料员"
+    },
+    {
+      "node_id": "N6",
+      "text": "监督复核",
+      "full_label": "生产组长监督复核",
+      "lane_id": "L1",
+      "responsible": "生产组长"
+    },
+    {
+      "node_id": "N7",
+      "text": "分料",
+      "full_label": "配料员分料",
+      "lane_id": "L2",
+      "responsible": "配料员"
+    },
+    {
+      "node_id": "N8",
+      "text": "生产执行程序",
+      "full_label": "生产工人生产执行程序",
+      "lane_id": "L4",
+      "responsible": "生产工人"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产准备 -> 通知领料并转单"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "通知领料并转单 -> 领料"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "领料 -> 签字发料"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签字发料 -> 监督复核"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "监督复核 -> 监督复核"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "监督复核 -> 分料"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "分料 -> 生产执行程序"
+    }
+  ]
+}

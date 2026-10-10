@@ -1,0 +1,225 @@
+{
+  "chart_id": "chart_006",
+  "title": "人文与民族学部资产设备采购流程图",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "教师",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "学院",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "学部资产与实验室管理办公室",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "资产与实验室管理处",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "教师提出申请并填写相关采购表格",
+      "full_label": "教师提出申请并填写相关采购表格",
+      "lane_id": "L1",
+      "responsible": "教师"
+    },
+    {
+      "node_id": "N2",
+      "text": "上报学院审核",
+      "full_label": "学院上报学院审核",
+      "lane_id": "L2",
+      "responsible": "学院"
+    },
+    {
+      "node_id": "N3",
+      "text": "学部资产与实验室管理办公室进行汇总",
+      "full_label": "学部资产与实验室管理办公室进行汇总",
+      "lane_id": "L3",
+      "responsible": "学部资产与实验室管理办公室"
+    },
+    {
+      "node_id": "N4",
+      "text": "资产与实验室管理处审批上报材料",
+      "full_label": "资产与实验室管理处审批上报材料",
+      "lane_id": "L4",
+      "responsible": "资产与实验室管理处"
+    },
+    {
+      "node_id": "N5",
+      "text": "采购设备",
+      "full_label": "资产与实验室管理处采购设备",
+      "lane_id": "L4",
+      "responsible": "资产与实验室管理处"
+    },
+    {
+      "node_id": "N6",
+      "text": "设备验收",
+      "full_label": "教师设备验收",
+      "lane_id": "L1",
+      "responsible": "教师"
+    },
+    {
+      "node_id": "N7",
+      "text": "教师进行网上入库填报",
+      "full_label": "教师进行网上入库填报",
+      "lane_id": "L1",
+      "responsible": "教师"
+    },
+    {
+      "node_id": "N8",
+      "text": "学部资产与实验室管理办公室审核入库手续",
+      "full_label": "学部资产与实验室管理办公室审核入库手续",
+      "lane_id": "L3",
+      "responsible": "学部资产与实验室管理办公室"
+    },
+    {
+      "node_id": "N9",
+      "text": "资产与实验室管理处进行审核",
+      "full_label": "资产与实验室管理处进行审核",
+      "lane_id": "L4",
+      "responsible": "资产与实验室管理处"
+    },
+    {
+      "node_id": "N10",
+      "text": "学院办理入库和报账手续",
+      "full_label": "学院办理入库和报账手续",
+      "lane_id": "L2",
+      "responsible": "学院"
+    },
+    {
+      "node_id": "N11",
+      "text": "教师办理入库和报账手续",
+      "full_label": "教师办理入库和报账手续",
+      "lane_id": "L1",
+      "responsible": "教师"
+    },
+    {
+      "node_id": "N12",
+      "text": "学院提出申请并填写相关采购表格",
+      "full_label": "学院提出申请并填写相关采购表格",
+      "lane_id": "L2",
+      "responsible": "学院"
+    },
+    {
+      "node_id": "N13",
+      "text": "学院进行设备验收，网上入库填报",
+      "full_label": "学院进行设备验收，网上入库填报",
+      "lane_id": "L2",
+      "responsible": "学院"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "教师提出申请并填写相关采购表格 -> 上报学院审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "上报学院审核 -> 学部资产与实验室管理办公室进行汇总"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N12",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "学院提出申请并填写相关采购表格 -> 学部资产与实验室管理办公室进行汇总"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "学部资产与实验室管理办公室进行汇总 -> 资产与实验室管理处审批上报材料"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "资产与实验室管理处审批上报材料 -> 采购设备"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购设备 -> 设备验收"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设备验收 -> 教师进行网上入库填报"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "教师进行网上入库填报 -> 学部资产与实验室管理办公室审核入库手续"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "学部资产与实验室管理办公室审核入库手续 -> 资产与实验室管理处进行审核"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "资产与实验室管理处进行审核 -> 学院办理入库和报账手续"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "资产与实验室管理处进行审核 -> 教师办理入库和报账手续"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N5",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购设备 -> 学院进行设备验收，网上入库填报"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "学院进行设备验收，网上入库填报 -> 学部资产与实验室管理办公室审核入库手续"
+    }
+  ]
+}

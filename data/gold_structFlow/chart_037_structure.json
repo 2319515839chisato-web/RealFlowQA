@@ -1,0 +1,440 @@
+{
+  "chart_id": "chart_037",
+  "title": "生产设备使用管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "生产总监",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "生产部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "设备使用单位",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "生产班组",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程 表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "配置设备",
+      "full_label": "生产部配置设备",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N2",
+      "text": "提出要求",
+      "full_label": "设备使用单位提出要求",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "生产部审批",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N4",
+      "text": "安排负荷",
+      "full_label": "设备使用单位安排负荷",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N5",
+      "text": "下达负荷",
+      "full_label": "设备使用单位下达负荷",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N6",
+      "text": "配备工人",
+      "full_label": "生产班组配备工人",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    },
+    {
+      "node_id": "N7",
+      "text": "使用制度",
+      "full_label": "设备使用单位使用制度",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N8",
+      "text": "补充完善",
+      "full_label": "生产部补充完善",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N9",
+      "text": "审批",
+      "full_label": "生产总监审批",
+      "lane_id": "L1",
+      "responsible": "生产总监"
+    },
+    {
+      "node_id": "N10",
+      "text": "组织执行",
+      "full_label": "生产部组织执行",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N11",
+      "text": "监督执行",
+      "full_label": "设备使用单位监督执行",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N12",
+      "text": "具体操作",
+      "full_label": "生产班组具体操作",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    },
+    {
+      "node_id": "N13",
+      "text": "定期检查",
+      "full_label": "生产部定期检查",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N14",
+      "text": "随时监督",
+      "full_label": "设备使用单位随时监督",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N15",
+      "text": "接受检查",
+      "full_label": "生产班组接受检查",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    },
+    {
+      "node_id": "N16",
+      "text": "发现问题",
+      "full_label": "生产部发现问题",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N17",
+      "text": "发现问题",
+      "full_label": "设备使用单位发现问题",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N18",
+      "text": "审批",
+      "full_label": "生产总监审批",
+      "lane_id": "L1",
+      "responsible": "生产总监"
+    },
+    {
+      "node_id": "N19",
+      "text": "制订措施",
+      "full_label": "生产部制订措施",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N20",
+      "text": "制订措施",
+      "full_label": "设备使用单位制订措施",
+      "lane_id": "L3",
+      "responsible": "设备使用单位"
+    },
+    {
+      "node_id": "N21",
+      "text": "限期整改",
+      "full_label": "生产部限期整改",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N22",
+      "text": "整改",
+      "full_label": "生产班组整改",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    },
+    {
+      "node_id": "N23",
+      "text": "整改反馈",
+      "full_label": "生产班组整改反馈",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    },
+    {
+      "node_id": "N24",
+      "text": "审批",
+      "full_label": "生产总监审批",
+      "lane_id": "L1",
+      "responsible": "生产总监"
+    },
+    {
+      "node_id": "N25",
+      "text": "相应报告",
+      "full_label": "生产部相应报告",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N26",
+      "text": "报告存档",
+      "full_label": "生产部报告存档",
+      "lane_id": "L2",
+      "responsible": "生产部"
+    },
+    {
+      "node_id": "N27",
+      "text": "提出要求",
+      "full_label": "生产班组提出要求",
+      "lane_id": "L4",
+      "responsible": "生产班组"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配置设备 -> 提出要求"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N27",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出要求 -> 提出要求"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出要求 -> 安排负荷"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "安排负荷 -> 审批"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N3",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 下达负荷"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下达负荷 -> 配备工人"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下达负荷 -> 使用制度"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "使用制度 -> 补充完善"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "补充完善 -> 审批"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 组织执行"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织执行 -> 监督执行"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "监督执行 -> 具体操作"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织执行 -> 定期检查"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定期检查 -> 发现问题"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定期检查 -> 随时监督"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "随时监督 -> 接受检查"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "随时监督 -> 发现问题"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发现问题 -> 制订措施"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N17",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发现问题 -> 制订措施"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N20",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订措施 -> 制订措施"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N19",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订措施 -> 审批"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N18",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 限期整改"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "限期整改 -> 整改"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "整改 -> 整改反馈"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N23",
+      "to": "N25",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "整改反馈 -> 相应报告"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N25",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "相应报告 -> 审批"
+    },
+    {
+      "edge_id": "E27",
+      "from": "N24",
+      "to": "N26",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 报告存档"
+    }
+  ]
+}

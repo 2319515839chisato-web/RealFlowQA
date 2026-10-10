@@ -1,0 +1,368 @@
+{
+  "chart_id": "chart_063",
+  "title": "人机交互界面",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "PM",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "语言",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "工程",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "源文件、参考文件、语言资产",
+      "full_label": "客户源文件、参考文件、语言资产",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "客户响应文件检查",
+      "full_label": "PM客户响应文件检查",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N3",
+      "text": "文件分析",
+      "full_label": "工程文件分析",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N4",
+      "text": "疑问确认",
+      "full_label": "PM疑问确认",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N5",
+      "text": "解答",
+      "full_label": "客户解答",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N6",
+      "text": "报价",
+      "full_label": "PM报价",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N7",
+      "text": "确认报价",
+      "full_label": "客户确认报价",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N8",
+      "text": "报价单",
+      "full_label": "PM报价单",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N9",
+      "text": "内容前处理",
+      "full_label": "工程内容前处理",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N10",
+      "text": "任务安排",
+      "full_label": "PM任务安排",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N11",
+      "text": "内容TEP",
+      "full_label": "语言内容TEP",
+      "lane_id": "L3",
+      "responsible": "语言"
+    },
+    {
+      "node_id": "N12",
+      "text": "交付QA",
+      "full_label": "PM交付QA",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N13",
+      "text": "解答",
+      "full_label": "客户解答",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N14",
+      "text": "内容后处理",
+      "full_label": "工程内容后处理",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N15",
+      "text": "检查",
+      "full_label": "PM检查",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N16",
+      "text": "导入车机",
+      "full_label": "客户导入车机",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N17",
+      "text": "确认走查节点",
+      "full_label": "客户确认走查节点",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N18",
+      "text": "任务安排",
+      "full_label": "PM任务安排",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N19",
+      "text": "车机走查",
+      "full_label": "语言车机走查",
+      "lane_id": "L3",
+      "responsible": "语言"
+    },
+    {
+      "node_id": "N20",
+      "text": "走查报告",
+      "full_label": "PM走查报告",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N21",
+      "text": "系统更新",
+      "full_label": "客户系统更新",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N22",
+      "text": "内容备份",
+      "full_label": "PM内容备份",
+      "lane_id": "L2",
+      "responsible": "PM"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "源文件、参考文件、语言资产 -> 客户响应文件检查"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户响应文件检查 -> 文件分析"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "文件分析 -> 疑问确认"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "疑问确认 -> 解答，condition=是"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "解答 -> 报价"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N4",
+      "to": "N6",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "疑问确认 -> 报价，condition=否"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报价 -> 确认报价"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认报价 -> 报价单"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报价单 -> 内容前处理"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容前处理 -> 任务安排"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "任务安排 -> 内容TEP"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容TEP -> 交付QA"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N13",
+      "condition": "提需求",
+      "edge_type": "normal",
+      "description": "内容TEP -> 解答，condition=提需求"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N11",
+      "condition": "客户回复",
+      "edge_type": "loop",
+      "description": "解答 -> 内容TEP，condition=客户回复"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "交付QA -> 内容后处理"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容后处理 -> 检查"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "检查 -> 导入车机"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "导入车机 -> 确认走查节点"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认走查节点 -> 任务安排"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "任务安排 -> 车机走查"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "车机走查 -> 走查报告"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "走查报告 -> 系统更新"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "系统更新 -> 内容备份"
+    }
+  ]
+}

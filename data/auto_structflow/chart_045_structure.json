@@ -1,0 +1,222 @@
+{
+  "chart_id": "chart_045",
+  "title": "物资储位管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "仓储经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "库房主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "库管员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "审核",
+      "full_label": "仓储经理审核",
+      "lane_id": "L1",
+      "responsible": "仓储经理"
+    },
+    {
+      "node_id": "N2",
+      "text": "确定库房储存条件",
+      "full_label": "库房主管确定库房储存条件",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N3",
+      "text": "物品储位情况",
+      "full_label": "库管员物品储位情况",
+      "lane_id": "L3",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N4",
+      "text": "规划库房空间",
+      "full_label": "库房主管规划库房空间",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "选定储存搬运设备",
+      "full_label": "库房主管选定储存搬运设备",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N6",
+      "text": "搬运设备信息",
+      "full_label": "相关人员搬运设备信息",
+      "lane_id": "L4",
+      "responsible": "相关人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "物品分类",
+      "full_label": "库管员物品分类",
+      "lane_id": "L3",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N8",
+      "text": "物品信息",
+      "full_label": "相关人员物品信息",
+      "lane_id": "L4",
+      "responsible": "相关人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "确定储位分配方式",
+      "full_label": "库房主管确定储位分配方式",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N10",
+      "text": "进行物品货物编号",
+      "full_label": "库管员进行物品货物编号",
+      "lane_id": "L3",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N11",
+      "text": "储位管理",
+      "full_label": "库房主管储位管理",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N12",
+      "text": "储位检查",
+      "full_label": "库管员储位检查",
+      "lane_id": "L3",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N13",
+      "text": "储位改善",
+      "full_label": "库房主管储位改善",
+      "lane_id": "L2",
+      "responsible": "库房主管"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N3",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物品储位情况 -> 确定库房储存条件"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N1",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定库房储存条件 -> 审核"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N1",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 规划库房空间"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "规划库房空间 -> 选定储存搬运设备"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N6",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "搬运设备信息 -> 选定储存搬运设备"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "选定储存搬运设备 -> 物品分类"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N8",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物品信息 -> 物品分类"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "物品分类 -> 确定储位分配方式"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定储位分配方式 -> 进行物品货物编号"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "进行物品货物编号 -> 储位管理"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N12",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "储位检查 -> 储位管理"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "储位管理 -> 储位改善"
+    }
+  ]
+}

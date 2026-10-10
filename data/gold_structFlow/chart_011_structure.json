@@ -1,0 +1,322 @@
+{
+  "chart_id": "chart_011",
+  "title": "采购合同管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "采购经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "供应商",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "选择供应商",
+      "full_label": "采购部选择供应商",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N2",
+      "text": "供应商评审",
+      "full_label": "采购部供应商评审",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N3",
+      "text": "配合",
+      "full_label": "供应商配合",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    },
+    {
+      "node_id": "N4",
+      "text": "制订供应商名单",
+      "full_label": "采购部制订供应商名单",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N5",
+      "text": "审核",
+      "full_label": "采购经理审核",
+      "lane_id": "L2",
+      "responsible": "采购经理"
+    },
+    {
+      "node_id": "N6",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N7",
+      "text": "采购谈判",
+      "full_label": "采购部采购谈判",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N8",
+      "text": "采购谈判",
+      "full_label": "供应商采购谈判",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    },
+    {
+      "node_id": "N9",
+      "text": "起草合同",
+      "full_label": "采购部起草合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N10",
+      "text": "审核",
+      "full_label": "采购经理审核",
+      "lane_id": "L2",
+      "responsible": "采购经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N12",
+      "text": "修改编制合同",
+      "full_label": "采购部修改编制合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N13",
+      "text": "签订合同",
+      "full_label": "采购部签订合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N14",
+      "text": "签订合同",
+      "full_label": "供应商签订合同",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    },
+    {
+      "node_id": "N15",
+      "text": "履行合同",
+      "full_label": "采购部履行合同",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N16",
+      "text": "履行合同",
+      "full_label": "供应商履行合同",
+      "lane_id": "L4",
+      "responsible": "供应商"
+    },
+    {
+      "node_id": "N17",
+      "text": "合同归档",
+      "full_label": "采购部合同归档",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "选择供应商 -> 供应商评审"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N3",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配合 -> 供应商评审"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "供应商评审 -> 制订供应商名单"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订供应商名单 -> 审核"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 采购谈判"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购谈判 -> 采购谈判"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购谈判 -> 采购谈判"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购谈判 -> 起草合同"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "起草合同 -> 审核"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审批，condition=Y"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N9",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 起草合同，condition=N"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审批 -> 修改编制合同，condition=Y"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N9",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审批 -> 起草合同，condition=N"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "修改编制合同 -> 签订合同"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订合同 -> 签订合同"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订合同 -> 签订合同"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N13",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签订合同 -> 履行合同"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "履行合同 -> 履行合同"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N16",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "履行合同 -> 履行合同"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N15",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "履行合同 -> 合同归档"
+    }
+  ]
+}

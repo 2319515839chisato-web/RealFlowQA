@@ -1,0 +1,295 @@
+{
+  "chart_id": "chart_055",
+  "title": "应付账款管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "出纳",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "会计",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "部门经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关职能部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "提出付款申请",
+      "full_label": "相关职能部门提出付款申请",
+      "lane_id": "L5",
+      "responsible": "相关职能部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "部门经理审核",
+      "lane_id": "L4",
+      "responsible": "部门经理"
+    },
+    {
+      "node_id": "N3",
+      "text": "审核",
+      "full_label": "会计审核",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "制取付款凭证",
+      "full_label": "会计制取付款凭证",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N6",
+      "text": "审核付款凭证",
+      "full_label": "财务经理审核付款凭证",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N7",
+      "text": "办理付款业务",
+      "full_label": "出纳办理付款业务",
+      "lane_id": "L1",
+      "responsible": "出纳"
+    },
+    {
+      "node_id": "N8",
+      "text": "支票付款",
+      "full_label": "出纳支票付款",
+      "lane_id": "L1",
+      "responsible": "出纳"
+    },
+    {
+      "node_id": "N9",
+      "text": "汇票付款",
+      "full_label": "出纳汇票付款",
+      "lane_id": "L1",
+      "responsible": "出纳"
+    },
+    {
+      "node_id": "N10",
+      "text": "领单开票",
+      "full_label": "出纳领单开票",
+      "lane_id": "L1",
+      "responsible": "出纳"
+    },
+    {
+      "node_id": "N11",
+      "text": "付款缴款",
+      "full_label": "出纳付款缴款",
+      "lane_id": "L1",
+      "responsible": "出纳"
+    },
+    {
+      "node_id": "N12",
+      "text": "核对支付凭证",
+      "full_label": "会计核对支付凭证",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N13",
+      "text": "登记账簿",
+      "full_label": "会计登记账簿",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N14",
+      "text": "编制复核记账凭证",
+      "full_label": "会计编制复核记账凭证",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N15",
+      "text": "对账",
+      "full_label": "会计对账",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N16",
+      "text": "更新财务账",
+      "full_label": "会计更新财务账",
+      "lane_id": "L3",
+      "responsible": "会计"
+    },
+    {
+      "node_id": "N17",
+      "text": "齐凭、以货抵款付款",
+      "full_label": "会计齐凭、以货抵款付款",
+      "lane_id": "L3",
+      "responsible": "会计"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提出付款申请 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审核"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审核"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 制取付款凭证"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制取付款凭证 -> 审核付款凭证"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核付款凭证 -> 办理付款业务"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理付款业务 -> 支票付款"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理付款业务 -> 齐凭、以货抵款付款"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "支票付款 -> 汇票付款"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇票付款 -> 领单开票"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "领单开票 -> 付款缴款"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "付款缴款 -> 核对支付凭证"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "核对支付凭证 -> 登记账簿"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记账簿 -> 编制复核记账凭证"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制复核记账凭证 -> 对账"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "对账 -> 更新财务账"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N6",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "审核付款凭证 -> 审核"
+    }
+  ]
+}

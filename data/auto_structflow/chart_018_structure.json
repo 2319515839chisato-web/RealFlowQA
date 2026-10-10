@@ -1,0 +1,253 @@
+{
+  "chart_id": "chart_018",
+  "title": "产品研发立项和策划流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "产品研发部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "研发经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "提供信息",
+      "full_label": "相关部门提供信息",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "立项准备",
+      "full_label": "产品研发部立项准备",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N3",
+      "text": "分析研究",
+      "full_label": "产品研发部分析研究",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N4",
+      "text": "过程策划",
+      "full_label": "产品研发部过程策划",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N5",
+      "text": "要求策划",
+      "full_label": "产品研发部要求策划",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N6",
+      "text": "产品开发和设计计划",
+      "full_label": "产品研发部产品开发和设计计划",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N7",
+      "text": "评审",
+      "full_label": "研发经理评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L4",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "产品研发项目策划报告",
+      "full_label": "产品研发部产品研发项目策划报告",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N10",
+      "text": "评审",
+      "full_label": "研发经理评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "撰写产品设计技术任务书",
+      "full_label": "产品研发部撰写产品设计技术任务书",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    },
+    {
+      "node_id": "N12",
+      "text": "评审",
+      "full_label": "研发经理评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N13",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L4",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "实施研发",
+      "full_label": "产品研发部实施研发",
+      "lane_id": "L2",
+      "responsible": "产品研发部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提供信息 -> 立项准备"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项准备 -> 分析研究"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "分析研究 -> 过程策划"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "分析研究 -> 要求策划"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "过程策划 -> 产品开发和设计计划"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "要求策划 -> 产品开发和设计计划"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品开发和设计计划 -> 评审"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 审批"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 产品研发项目策划报告"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品研发项目策划报告 -> 评审"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 撰写产品设计技术任务书"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "撰写产品设计技术任务书 -> 评审"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 审批"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 实施研发"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "审批 -> 撰写产品设计技术任务书"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "chart_id": "chart_016",
+  "title": "产品开发基本流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "产品开发部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "研发经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "研发需求",
+      "full_label": "相关部门研发需求",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "立项",
+      "full_label": "产品开发部门立项",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    },
+    {
+      "node_id": "N3",
+      "text": "组织评审",
+      "full_label": "研发经理组织评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L4",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "制订研制计划",
+      "full_label": "产品开发部门制订研制计划",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    },
+    {
+      "node_id": "N6",
+      "text": "评审",
+      "full_label": "研发经理评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N7",
+      "text": "技术及工作图设计",
+      "full_label": "产品开发部门技术及工作图设计",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    },
+    {
+      "node_id": "N8",
+      "text": "评审",
+      "full_label": "研发经理评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "试制",
+      "full_label": "相关部门试制",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N10",
+      "text": "测试验证",
+      "full_label": "相关部门测试验证",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N11",
+      "text": "改进修正",
+      "full_label": "产品开发部门改进修正",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    },
+    {
+      "node_id": "N12",
+      "text": "确认",
+      "full_label": "产品开发部门确认",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    },
+    {
+      "node_id": "N13",
+      "text": "组织评审",
+      "full_label": "研发经理组织评审",
+      "lane_id": "L3",
+      "responsible": "研发经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L4",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "产品认证申请专利",
+      "full_label": "相关部门产品认证申请专利",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N16",
+      "text": "批量生产",
+      "full_label": "相关部门批量生产",
+      "lane_id": "L1",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N17",
+      "text": "资料存档",
+      "full_label": "产品开发部门资料存档",
+      "lane_id": "L2",
+      "responsible": "产品开发部门"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "研发需求 -> 立项"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项 -> 组织评审"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织评审 -> 审批"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 制订研制计划"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制订研制计划 -> 评审"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 技术及工作图设计"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "技术及工作图设计 -> 评审"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "评审 -> 试制"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "试制 -> 测试验证"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "测试验证 -> 改进修正"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "改进修正 -> 确认"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认 -> 组织评审"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织评审 -> 审批"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 产品认证申请专利"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品认证申请专利 -> 批量生产"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "批量生产 -> 资料存档"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N11",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "loop",
+      "description": "改进修正 -> 试制"
+    }
+  ]
+}

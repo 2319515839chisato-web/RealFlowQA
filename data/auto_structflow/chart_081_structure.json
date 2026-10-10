@@ -1,0 +1,244 @@
+{
+  "chart_id": "chart_081",
+  "title": "电商售后服务流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "电商客服",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "电商主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "仓储部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "开始",
+      "full_label": "客户开始",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "客户提出退换货",
+      "full_label": "客户提出退换货",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N3",
+      "text": "客服沟通",
+      "full_label": "电商客服客服沟通",
+      "lane_id": "L2",
+      "responsible": "电商客服"
+    },
+    {
+      "node_id": "N4",
+      "text": "主管审核申请",
+      "full_label": "电商主管主管审核申请",
+      "lane_id": "L3",
+      "responsible": "电商主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "收货确认",
+      "full_label": "电商客服收货确认",
+      "lane_id": "L2",
+      "responsible": "电商客服"
+    },
+    {
+      "node_id": "N6",
+      "text": "是否符合退换货",
+      "full_label": "仓储部是否符合退换货",
+      "lane_id": "L4",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N7",
+      "text": "发票是否寄回",
+      "full_label": "财务部发票是否寄回",
+      "lane_id": "L5",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N8",
+      "text": "作废发票",
+      "full_label": "财务部作废发票",
+      "lane_id": "L5",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N9",
+      "text": "入库换货",
+      "full_label": "仓储部入库换货",
+      "lane_id": "L4",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N10",
+      "text": "发货/退款",
+      "full_label": "电商主管发货/退款",
+      "lane_id": "L3",
+      "responsible": "电商主管"
+    },
+    {
+      "node_id": "N11",
+      "text": "执行",
+      "full_label": "电商客服执行",
+      "lane_id": "L2",
+      "responsible": "电商客服"
+    },
+    {
+      "node_id": "N12",
+      "text": "结束",
+      "full_label": "客户结束",
+      "lane_id": "L1",
+      "responsible": "客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开始 -> 客户提出退换货"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户提出退换货 -> 客服沟通"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N1",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "客服沟通 -> 开始，condition=否"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "客服沟通 -> 主管审核申请，condition=是"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N1",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "主管审核申请 -> 开始，condition=否"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N4",
+      "to": "N5",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "主管审核申请 -> 收货确认，condition=是"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "收货确认 -> 是否符合退换货"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N1",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "是否符合退换货 -> 开始，condition=否"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N6",
+      "to": "N7",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "是否符合退换货 -> 发票是否寄回，condition=是"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N7",
+      "to": "N1",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "发票是否寄回 -> 开始，condition=否"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N7",
+      "to": "N8",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "发票是否寄回 -> 作废发票，condition=是"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "作废发票 -> 入库换货"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "入库换货 -> 发货/退款"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发货/退款 -> 执行"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N11",
+      "to": "N12",
+      "condition": "客户确认",
+      "edge_type": "normal",
+      "description": "执行 -> 结束，condition=客户确认"
+    }
+  ]
+}

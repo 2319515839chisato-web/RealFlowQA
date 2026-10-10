@@ -1,0 +1,247 @@
+{
+  "chart_id": "chart_034",
+  "title": "日常税务管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "税务核算",
+      "full_label": "财务部税务核算",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N2",
+      "text": "编制会计转账凭证",
+      "full_label": "财务部编制会计转账凭证",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N3",
+      "text": "填写打印税务申报表",
+      "full_label": "财务部填写打印税务申报表",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N6",
+      "text": "纳税申报与税款缴纳",
+      "full_label": "财务部纳税申报与税款缴纳",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "银行回单",
+      "full_label": "财务部银行回单",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N8",
+      "text": "编制付款凭证",
+      "full_label": "财务部编制付款凭证",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N9",
+      "text": "编制税务缴纳汇总表、税务分析",
+      "full_label": "财务部编制税务缴纳汇总表、税务分析",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N10",
+      "text": "审阅",
+      "full_label": "财务经理审阅",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "接受税务检查",
+      "full_label": "财务部接受税务检查",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N12",
+      "text": "收到税务检查结果",
+      "full_label": "财务部收到税务检查结果",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N13",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "账务处理",
+      "full_label": "财务部账务处理",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "税务核算 -> 编制会计转账凭证"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制会计转账凭证 -> 填写打印税务申报表"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "填写打印税务申报表 -> 审核"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 纳税申报与税款缴纳"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "纳税申报与税款缴纳 -> 银行回单"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "银行回单 -> 编制付款凭证"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制付款凭证 -> 编制税务缴纳汇总表、税务分析"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制税务缴纳汇总表、税务分析 -> 审阅"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制税务缴纳汇总表、税务分析 -> 接受税务检查"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接受税务检查 -> 收到税务检查结果"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "收到税务检查结果 -> 审核"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 账务处理"
+    }
+  ]
+}

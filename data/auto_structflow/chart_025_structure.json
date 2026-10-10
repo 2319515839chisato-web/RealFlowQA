@@ -1,0 +1,261 @@
+{
+  "chart_id": "chart_025",
+  "title": "甘肃省“教育入学一件事”业务流程图",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "甘肃省一体化政务服务平台",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "教育行政管理部门入学招生系统",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "家长",
+      "full_label": "家长",
+      "lane_id": "L1",
+      "responsible": "甘肃省一体化政务服务平台"
+    },
+    {
+      "node_id": "N2",
+      "text": "教育局制定招生政策、计划",
+      "full_label": "教育行政管理部门入学招生系统教育局制定招生政策、计划",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N3",
+      "text": "向社会宣传招生政策（时间、地点、入口等）",
+      "full_label": "教育行政管理部门入学招生系统向社会宣传招生政策（时间、地点、入口等）",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N4",
+      "text": "开启招生报名",
+      "full_label": "教育行政管理部门入学招生系统开启招生报名",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N5",
+      "text": "登录注册“甘快办”/政务服务网",
+      "full_label": "甘肃省一体化政务服务平台登录注册“甘快办”/政务服务网",
+      "lane_id": "L1",
+      "responsible": "甘肃省一体化政务服务平台"
+    },
+    {
+      "node_id": "N6",
+      "text": "信息填报",
+      "full_label": "甘肃省一体化政务服务平台信息填报",
+      "lane_id": "L1",
+      "responsible": "甘肃省一体化政务服务平台"
+    },
+    {
+      "node_id": "N7",
+      "text": "学校线上初审",
+      "full_label": "教育行政管理部门入学招生系统学校线上初审",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N8",
+      "text": "是否需要现场审核",
+      "full_label": "教育行政管理部门入学招生系统是否需要现场审核",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N9",
+      "text": "确定审核人、时间和场地",
+      "full_label": "教育行政管理部门入学招生系统确定审核人、时间和场地",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N10",
+      "text": "携带材料参加现场审核",
+      "full_label": "教育行政管理部门入学招生系统携带材料参加现场审核",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N11",
+      "text": "通过现场审核",
+      "full_label": "教育行政管理部门入学招生系统通过现场审核",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N12",
+      "text": "进行录取",
+      "full_label": "教育行政管理部门入学招生系统进行录取",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N13",
+      "text": "进行调剂",
+      "full_label": "教育行政管理部门入学招生系统进行调剂",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N14",
+      "text": "完成录取",
+      "full_label": "教育行政管理部门入学招生系统完成录取",
+      "lane_id": "L2",
+      "responsible": "教育行政管理部门入学招生系统"
+    },
+    {
+      "node_id": "N15",
+      "text": "录取通知",
+      "full_label": "甘肃省一体化政务服务平台录取通知",
+      "lane_id": "L1",
+      "responsible": "甘肃省一体化政务服务平台"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "家长 -> 登录注册“甘快办”/政务服务网"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "教育局制定招生政策、计划 -> 向社会宣传招生政策（时间、地点、入口等）"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "向社会宣传招生政策（时间、地点、入口等） -> 开启招生报名"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开启招生报名 -> 登录注册“甘快办”/政务服务网"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登录注册“甘快办”/政务服务网 -> 信息填报"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "信息填报 -> 学校线上初审"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N6",
+      "condition": "不通过，退回/补正",
+      "edge_type": "loop",
+      "description": "学校线上初审 -> 信息填报，condition=不通过，退回/补正"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "通过",
+      "edge_type": "condition",
+      "description": "学校线上初审 -> 是否需要现场审核，condition=通过"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "是否需要现场审核 -> 确定审核人、时间和场地，condition=是"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "通知家长",
+      "edge_type": "condition",
+      "description": "确定审核人、时间和场地 -> 携带材料参加现场审核，condition=通知家长"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "携带材料参加现场审核 -> 通过现场审核"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "审核通过",
+      "edge_type": "condition",
+      "description": "通过现场审核 -> 进行录取，condition=审核通过"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N8",
+      "to": "N12",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "是否需要现场审核 -> 进行录取，condition=否"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N14",
+      "condition": "符合条件",
+      "edge_type": "condition",
+      "description": "进行录取 -> 完成录取，condition=符合条件"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N13",
+      "condition": "不符合条件",
+      "edge_type": "condition",
+      "description": "进行录取 -> 进行调剂，condition=不符合条件"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "进行调剂 -> 完成录取"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N15",
+      "condition": "通知家长",
+      "edge_type": "condition",
+      "description": "完成录取 -> 录取通知，condition=通知家长"
+    }
+  ]
+}

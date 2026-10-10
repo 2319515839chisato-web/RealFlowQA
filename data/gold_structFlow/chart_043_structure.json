@@ -1,0 +1,165 @@
+{
+  "chart_id": "chart_043",
+  "title": "市场调研问卷设计流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "相关人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "市场调研人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "市场经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "确定调研目的收集相关资料",
+      "full_label": "市场调研人员确定调研目的收集相关资料",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N2",
+      "text": "设计调研问题",
+      "full_label": "市场调研人员设计调研问题",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N3",
+      "text": "完成初稿",
+      "full_label": "市场调研人员完成初稿",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N4",
+      "text": "试答",
+      "full_label": "相关人员试答",
+      "lane_id": "L1",
+      "responsible": "相关人员"
+    },
+    {
+      "node_id": "N5",
+      "text": "反馈修改",
+      "full_label": "市场调研人员反馈修改",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N6",
+      "text": "优化问卷",
+      "full_label": "市场调研人员优化问卷",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "审核",
+      "full_label": "市场经理审核",
+      "lane_id": "L3",
+      "responsible": "市场经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "定稿",
+      "full_label": "市场调研人员定稿",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "打印",
+      "full_label": "市场调研人员打印",
+      "lane_id": "L2",
+      "responsible": "市场调研人员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定调研目的收集相关资料 -> 设计调研问题"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计调研问题 -> 完成初稿"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "完成初稿 -> 试答"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "试答 -> 反馈修改"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "反馈修改 -> 优化问卷"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "优化问卷 -> 审核"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N5",
+      "condition": "否",
+      "edge_type": "loop",
+      "description": "审核 -> 反馈修改，condition=否"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "审核 -> 定稿，condition=是"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "定稿 -> 打印"
+    }
+  ]
+}

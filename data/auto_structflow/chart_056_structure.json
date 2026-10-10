@@ -1,0 +1,253 @@
+{
+  "chart_id": "chart_056",
+  "title": "应收账款管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "业务部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "法务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "交单",
+      "full_label": "业务部门交单",
+      "lane_id": "L1",
+      "responsible": "业务部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "财务部审核",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N3",
+      "text": "审批",
+      "full_label": "财务主管审批",
+      "lane_id": "L3",
+      "responsible": "财务主管"
+    },
+    {
+      "node_id": "N4",
+      "text": "开发票，确认应收账款",
+      "full_label": "财务部开发票，确认应收账款",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N5",
+      "text": "登记编制应收账款明细及账龄报告",
+      "full_label": "财务部登记编制应收账款明细及账龄报告",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N6",
+      "text": "付款",
+      "full_label": "财务部付款",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "催款",
+      "full_label": "业务部门催款",
+      "lane_id": "L1",
+      "responsible": "业务部门"
+    },
+    {
+      "node_id": "N8",
+      "text": "问题账款",
+      "full_label": "业务部门问题账款",
+      "lane_id": "L1",
+      "responsible": "业务部门"
+    },
+    {
+      "node_id": "N9",
+      "text": "能否收回",
+      "full_label": "财务主管能否收回",
+      "lane_id": "L3",
+      "responsible": "财务主管"
+    },
+    {
+      "node_id": "N10",
+      "text": "呆令处理",
+      "full_label": "财务部呆令处理",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N11",
+      "text": "法律诉讼",
+      "full_label": "法务部法律诉讼",
+      "lane_id": "L4",
+      "responsible": "法务部"
+    },
+    {
+      "node_id": "N12",
+      "text": "编制银行调节表",
+      "full_label": "财务部编制银行调节表",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N13",
+      "text": "审核",
+      "full_label": "财务主管审核",
+      "lane_id": "L3",
+      "responsible": "财务主管"
+    },
+    {
+      "node_id": "N14",
+      "text": "应收账款报告",
+      "full_label": "财务部应收账款报告",
+      "lane_id": "L2",
+      "responsible": "财务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "交单 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 开发票，确认应收账款"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开发票，确认应收账款 -> 登记编制应收账款明细及账龄报告"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记编制应收账款明细及账龄报告 -> 付款"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "付款 -> 催款，condition=N"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "催款 -> 问题账款"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "问题账款 -> 能否收回"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "能否收回 -> 呆令处理，condition=Y"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N11",
+      "condition": "N",
+      "edge_type": "condition",
+      "description": "能否收回 -> 法律诉讼，condition=N"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "法律诉讼 -> 呆令处理"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N6",
+      "to": "N10",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "付款 -> 呆令处理，condition=Y"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "呆令处理 -> 编制银行调节表"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制银行调节表 -> 审核"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 应收账款报告"
+    }
+  ]
+}

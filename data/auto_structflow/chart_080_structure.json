@@ -1,0 +1,416 @@
+{
+  "chart_id": "chart_080",
+  "title": "B2B业务流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "销售环节",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "采购环节",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "开始",
+      "full_label": "客户开始",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "客户需求",
+      "full_label": "客户需求",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N3",
+      "text": "Ickey搜索、上传BOM",
+      "full_label": "客户Ickey搜索、上传BOM",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N4",
+      "text": "加入购物车",
+      "full_label": "客户加入购物车",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N5",
+      "text": "客户自助下单（SC）",
+      "full_label": "客户自助下单（SC）",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N6",
+      "text": "客服与销售人员沟通需求",
+      "full_label": "销售环节客服与销售人员沟通需求",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N7",
+      "text": "销售初步确认是否有货",
+      "full_label": "销售环节销售初步确认是否有货",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N8",
+      "text": "与ERP系统匹配需求/询问供应商询价",
+      "full_label": "采购环节与ERP系统匹配需求/询问供应商询价",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N9",
+      "text": "向客户报价",
+      "full_label": "销售环节向客户报价",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N10",
+      "text": "客户是否接受报价",
+      "full_label": "销售环节客户是否接受报价",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N11",
+      "text": "结束",
+      "full_label": "客户结束",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N12",
+      "text": "销售提交订单（SF）",
+      "full_label": "销售环节销售提交订单（SF）",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N13",
+      "text": "客户自助下单（授信情况）",
+      "full_label": "客户自助下单（授信情况）",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N14",
+      "text": "订单审核",
+      "full_label": "销售环节订单审核",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N15",
+      "text": "下载/上传合同",
+      "full_label": "客户下载/上传合同",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N16",
+      "text": "生成采购订单（PO）",
+      "full_label": "采购环节生成采购订单（PO）",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N17",
+      "text": "下单采购",
+      "full_label": "采购环节下单采购",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N18",
+      "text": "报关、物流",
+      "full_label": "采购环节报关、物流",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N19",
+      "text": "质检",
+      "full_label": "采购环节质检",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N20",
+      "text": "入库",
+      "full_label": "采购环节入库",
+      "lane_id": "L3",
+      "responsible": "采购环节"
+    },
+    {
+      "node_id": "N21",
+      "text": "出货",
+      "full_label": "销售环节出货",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N22",
+      "text": "签收",
+      "full_label": "客户签收",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N23",
+      "text": "开票",
+      "full_label": "销售环节开票",
+      "lane_id": "L2",
+      "responsible": "销售环节"
+    },
+    {
+      "node_id": "N24",
+      "text": "对账",
+      "full_label": "客户对账",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N25",
+      "text": "回款",
+      "full_label": "客户回款",
+      "lane_id": "L1",
+      "responsible": "客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开始 -> 客户需求"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户需求 -> Ickey搜索、上传BOM"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户需求 -> 客服与销售人员沟通需求"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "Ickey搜索、上传BOM -> 加入购物车"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "加入购物车 -> 客户自助下单（SC）"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客服与销售人员沟通需求 -> 销售初步确认是否有货"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "无",
+      "edge_type": "condition",
+      "description": "销售初步确认是否有货 -> 与ERP系统匹配需求/询问供应商询价，condition=无"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "与ERP系统匹配需求/询问供应商询价 -> 向客户报价"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N9",
+      "condition": "有",
+      "edge_type": "condition",
+      "description": "销售初步确认是否有货 -> 向客户报价，condition=有"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "向客户报价 -> 客户是否接受报价"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "客户是否接受报价 -> 结束，condition=否"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N12",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "客户是否接受报价 -> 销售提交订单（SF），condition=是"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "销售提交订单（SF） -> 客户自助下单（授信情况）"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户自助下单（授信情况） -> 订单审核"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N5",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户自助下单（SC） -> 订单审核"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单审核 -> 下载/上传合同"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N16",
+      "condition": "先销后采模式",
+      "edge_type": "condition",
+      "description": "订单审核 -> 生成采购订单（PO），condition=先销后采模式"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生成采购订单（PO） -> 下单采购"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下单采购 -> 报关、物流"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报关、物流 -> 质检"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "质检 -> 入库"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "入库 -> 出货"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N14",
+      "to": "N21",
+      "condition": "先采后销模式",
+      "edge_type": "condition",
+      "description": "订单审核 -> 出货，condition=先采后销模式"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "出货 -> 签收"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签收 -> 开票"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N23",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开票 -> 对账"
+    },
+    {
+      "edge_id": "E27",
+      "from": "N24",
+      "to": "N25",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "对账 -> 回款"
+    }
+  ]
+}

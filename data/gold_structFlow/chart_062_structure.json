@@ -1,0 +1,458 @@
+{
+  "chart_id": "chart_062",
+  "title": "软件本地化",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "PM",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "语言",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "工程",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "测试",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "源文件、参考文件、语言资产",
+      "full_label": "客户源文件、参考文件、语言资产",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "客户响应文件检查",
+      "full_label": "PM客户响应文件检查",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N3",
+      "text": "文件分析",
+      "full_label": "工程文件分析",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N4",
+      "text": "疑问确认",
+      "full_label": "PM疑问确认",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N5",
+      "text": "解答",
+      "full_label": "客户解答",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N6",
+      "text": "报价",
+      "full_label": "PM报价",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N7",
+      "text": "确认报价",
+      "full_label": "客户确认报价",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N8",
+      "text": "报价单",
+      "full_label": "PM报价单",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N9",
+      "text": "内容前处理",
+      "full_label": "工程内容前处理",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N10",
+      "text": "任务安排",
+      "full_label": "PM任务安排",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N11",
+      "text": "内容TEP",
+      "full_label": "语言内容TEP",
+      "lane_id": "L3",
+      "responsible": "语言"
+    },
+    {
+      "node_id": "N12",
+      "text": "交付QA",
+      "full_label": "PM交付QA",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N13",
+      "text": "解答",
+      "full_label": "客户解答",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N14",
+      "text": "内容后处理",
+      "full_label": "工程内容后处理",
+      "lane_id": "L4",
+      "responsible": "工程"
+    },
+    {
+      "node_id": "N15",
+      "text": "检查",
+      "full_label": "PM检查",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N16",
+      "text": "软件做包",
+      "full_label": "客户软件做包",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N17",
+      "text": "方式？",
+      "full_label": "PM方式？",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N18",
+      "text": "搭建环境",
+      "full_label": "测试搭建环境",
+      "lane_id": "L5",
+      "responsible": "测试"
+    },
+    {
+      "node_id": "N19",
+      "text": "测试",
+      "full_label": "测试",
+      "lane_id": "L5",
+      "responsible": "测试"
+    },
+    {
+      "node_id": "N20",
+      "text": "报告",
+      "full_label": "测试报告",
+      "lane_id": "L5",
+      "responsible": "测试"
+    },
+    {
+      "node_id": "N21",
+      "text": "确认",
+      "full_label": "PM确认",
+      "lane_id": "L2",
+      "responsible": "PM"
+    },
+    {
+      "node_id": "N22",
+      "text": "修复",
+      "full_label": "客户修复",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N23",
+      "text": "更新内容、TM",
+      "full_label": "语言更新内容、TM",
+      "lane_id": "L3",
+      "responsible": "语言"
+    },
+    {
+      "node_id": "N24",
+      "text": "生成语言包",
+      "full_label": "客户生成语言包",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N25",
+      "text": "内容备份",
+      "full_label": "PM内容备份",
+      "lane_id": "L2",
+      "responsible": "PM"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "经过客户和PM之间的Connector，并且判断为否",
+      "edge_type": "condition",
+      "description": "源文件、参考文件、语言资产 -> 客户响应文件检查,condition=否，邮件"
+    },
+{
+      "edge_id": "E2",
+      "from": "N1",
+      "to": "N2",
+      "condition": "经过客户和PM之间的Connector，并且判断为是",
+      "edge_type": "condition",
+      "description": "源文件、参考文件、语言资产 -> 客户响应文件检查,condition=是，自动"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户响应文件检查 -> 文件分析"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "文件分析 -> 疑问确认"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "疑问确认 -> 解答，condition=是"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "解答 -> 报价"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N4",
+      "to": "N6",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "疑问确认 -> 报价，condition=否"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报价 -> 确认报价"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确认报价 -> 报价单"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报价单 -> 内容前处理"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容前处理 -> 任务安排"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "任务安排 -> 内容TEP"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容TEP -> 交付QA"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N13",
+      "condition": "提需求",
+      "edge_type": "normal",
+      "description": "内容TEP -> 解答，condition=提需求"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N11",
+      "condition": "客户回复",
+      "edge_type": "loop",
+      "description": "解答 -> 内容TEP，condition=客户回复"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N12",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "交付QA-> 内容后处理"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "内容后处理 -> 检查"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N15",
+      "to": "N16",
+      "condition": "经过客户和PM之间的Connector，并且判断为否",
+      "edge_type": "condition",
+      "description": "检查 -> 软件做包，condition=否"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N15",
+      "to": "N19",
+      "condition": "经过客户和PM之间的Connector，并且判断为是",
+      "edge_type": "condition",
+      "description": "检查 -> 测试，condition=否"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "软件做包 -> 方式？"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "搭建环境 -> 测试"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "测试 -> 报告"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "报告 -> 确认"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N21",
+      "to": "N22",
+      "condition": "功能问题",
+      "edge_type": "condition",
+      "description": "确认 -> 修复，condition=功能问题"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N22",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "修复 -> 生成语言包"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N21",
+      "to": "N23",
+      "condition": "语言问题",
+      "edge_type": "condition",
+      "description": "确认 -> 更新内容、TM，condition=语言问题"
+    },
+    {
+      "edge_id": "E27",
+      "from": "N23",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "更新内容、TM -> 生成语言包"
+    },
+    {
+      "edge_id": "E28",
+      "from": "N24",
+      "to": "N25",
+      "condition": "无问题",
+      "edge_type": "normal",
+      "description": "生成语言包 -> 内容备份，condition=无问题"
+    },
+    {
+      "edge_id": "E29",
+      "from": "N24",
+      "to": "N16",
+      "condition": "有问题",
+      "edge_type": "loop",
+      "description": "生成语言包 -> 软件做包，condition=有问题"
+    },
+ {
+      "edge_id": "E30",
+      "from": "N17",
+      "to": "N18",
+      "condition": "测试",
+      "edge_type": "condition",
+      "description": "方式？ -> 搭建环境，condition=测试"
+    },
+{
+      "edge_id": "E31",
+      "from": "N17",
+      "to": "N19",
+      "condition": "截图",
+      "edge_type": "condition",
+      "description": "方式？ -> 测试，condition=截图"
+    }
+  ]
+}

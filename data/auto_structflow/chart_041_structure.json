@@ -1,0 +1,172 @@
+{
+  "chart_id": "chart_041",
+  "title": "市场调研方案设计流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "市场调研部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "市场经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "明确调研方案的目的",
+      "full_label": "市场调研部门明确调研方案的目的",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N2",
+      "text": "确定调研资料来源",
+      "full_label": "市场调研部门确定调研资料来源",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N3",
+      "text": "设计资料收集方法和工具",
+      "full_label": "市场调研部门设计资料收集方法和工具",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N4",
+      "text": "确定样本计划",
+      "full_label": "市场调研部门确定样本计划",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N5",
+      "text": "形成调研计划",
+      "full_label": "市场调研部门形成调研计划",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N6",
+      "text": "调研经费预算",
+      "full_label": "市场调研部门调研经费预算",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N7",
+      "text": "编写调研方案",
+      "full_label": "市场调研部门编写调研方案",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    },
+    {
+      "node_id": "N8",
+      "text": "审核",
+      "full_label": "市场经理审核",
+      "lane_id": "L2",
+      "responsible": "市场经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L3",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N10",
+      "text": "实施调研",
+      "full_label": "市场调研部门实施调研",
+      "lane_id": "L1",
+      "responsible": "市场调研部门"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "明确调研方案的目的 -> 确定调研资料来源"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定调研资料来源 -> 设计资料收集方法和工具"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计资料收集方法和工具 -> 确定样本计划"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定样本计划 -> 形成调研计划"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "形成调研计划 -> 调研经费预算"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "调研经费预算 -> 编写调研方案"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编写调研方案 -> 审核"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 审批"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 实施调研"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "chart_id": "chart_013",
+  "title": "仓库安全管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "仓储经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "仓储部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N2",
+      "text": "制定安全管理制度",
+      "full_label": "仓储经理制定安全管理制度",
+      "lane_id": "L2",
+      "responsible": "仓储经理"
+    },
+    {
+      "node_id": "N3",
+      "text": "明确安全管理规定",
+      "full_label": "仓储经理明确安全管理规定",
+      "lane_id": "L2",
+      "responsible": "仓储经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "库房安全管理",
+      "full_label": "仓储部库房安全管理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N5",
+      "text": "配合",
+      "full_label": "相关部门配合",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N6",
+      "text": "进出库房人员安全控制",
+      "full_label": "仓储部进出库房人员安全控制",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N7",
+      "text": "库房物资收发保管储存安全管理",
+      "full_label": "仓储部库房物资收发保管储存安全管理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N8",
+      "text": "库房消防管理",
+      "full_label": "仓储部库房消防管理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N9",
+      "text": "库房防盗管理",
+      "full_label": "仓储部库房防盗管理",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N10",
+      "text": "异常",
+      "full_label": "仓储部异常",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N11",
+      "text": "处理异常",
+      "full_label": "仓储部处理异常",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N12",
+      "text": "解决",
+      "full_label": "仓储部解决",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N13",
+      "text": "听取汇报",
+      "full_label": "仓储经理听取汇报",
+      "lane_id": "L2",
+      "responsible": "仓储经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "提出处理方案",
+      "full_label": "仓储经理提出处理方案",
+      "lane_id": "L2",
+      "responsible": "仓储经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "审批",
+      "full_label": "总经理审批",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N16",
+      "text": "异常解决",
+      "full_label": "仓储部异常解决",
+      "lane_id": "L3",
+      "responsible": "仓储部"
+    },
+    {
+      "node_id": "N17",
+      "text": "配合",
+      "full_label": "相关部门配合",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N18",
+      "text": "配合",
+      "full_label": "相关部门配合",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N2",
+      "to": "N1",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定安全管理制度 -> 审批"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N1",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 明确安全管理规定"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "明确安全管理规定 -> 库房安全管理"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N5",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配合 -> 库房安全管理"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "库房安全管理 -> 进出库房人员安全控制"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "进出库房人员安全控制 -> 库房物资收发保管储存安全管理"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "库房物资收发保管储存安全管理 -> 库房消防管理"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "库房消防管理 -> 库房防盗管理"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "库房防盗管理 -> 异常"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "异常 -> 处理异常"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "处理异常 -> 解决"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "解决 -> 听取汇报"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "听取汇报 -> 提出处理方案"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N14",
+      "to": "N15",
+      "condition": "权限外",
+      "edge_type": "condition",
+      "description": "提出处理方案 -> 审批,condition=权限外"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 异常解决"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N16",
+      "condition": "权限内",
+      "edge_type": "condition",
+      "description": "提出处理方案 -> 异常解决，condition=权限内"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N17",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配合 -> 异常解决"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N18",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "配合 -> 进出库房人员安全控制"
+    }
+  ]
+}

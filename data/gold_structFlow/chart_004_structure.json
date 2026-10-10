@@ -1,0 +1,299 @@
+{
+  "chart_id": "chart_004",
+  "title": "财务预算工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "总经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "财务经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "各部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "关联规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "确定公司经营和预算目标",
+      "full_label": "总经理确定公司经营和预算目标",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N2",
+      "text": "制定预算编制办法和原则",
+      "full_label": "财务部制定预算编制办法和原则",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N3",
+      "text": "召开部门预算会议",
+      "full_label": "各部门召开部门预算会议",
+      "lane_id": "L4",
+      "responsible": "各部门"
+    },
+    {
+      "node_id": "N4",
+      "text": "编制部门预算草案",
+      "full_label": "各部门编制部门预算草案",
+      "lane_id": "L4",
+      "responsible": "各部门"
+    },
+    {
+      "node_id": "N5",
+      "text": "汇总各部门预算",
+      "full_label": "财务部汇总各部门预算",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N6",
+      "text": "制定公司总体预算方案",
+      "full_label": "财务部制定公司总体预算方案",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N7",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N8",
+      "text": "审核",
+      "full_label": "总经理审核",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "召开公司预算平衡会议",
+      "full_label": "总经理召开公司预算平衡会议",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N10",
+      "text": "修正预算",
+      "full_label": "各部门修正预算",
+      "lane_id": "L4",
+      "responsible": "各部门"
+    },
+    {
+      "node_id": "N11",
+      "text": "修正公司总体预算",
+      "full_label": "财务部修正公司总体预算",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N12",
+      "text": "审核",
+      "full_label": "财务经理审核",
+      "lane_id": "L2",
+      "responsible": "财务经理"
+    },
+    {
+      "node_id": "N13",
+      "text": "审核",
+      "full_label": "总经理审核",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N14",
+      "text": "年度预算下达",
+      "full_label": "总经理年度预算下达",
+      "lane_id": "L1",
+      "responsible": "总经理"
+    },
+    {
+      "node_id": "N15",
+      "text": "预算执行",
+      "full_label": "各部门预算执行",
+      "lane_id": "L4",
+      "responsible": "各部门"
+    },
+    {
+      "node_id": "N16",
+      "text": "预算编制资料存档",
+      "full_label": "财务部预算编制资料存档",
+      "lane_id": "L3",
+      "responsible": "财务部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "确定公司经营和预算目标 -> 制定预算编制办法和原则"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定预算编制办法和原则 -> 召开部门预算会议"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "召开部门预算会议 -> 编制部门预算草案"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制部门预算草案 -> 汇总各部门预算"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "汇总各部门预算 -> 制定公司总体预算方案"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "制定公司总体预算方案 -> 审核"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审核，condition=Y"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N6",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 制定公司总体预算方案，condition=N"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N7",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 审核，condition=N"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 召开公司预算平衡会议，condition=Y"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "召开公司预算平衡会议 -> 修正预算"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "修正预算 -> 修正公司总体预算"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "修正公司总体预算 -> 审核"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N13",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 审核，condition=Y"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N12",
+      "to": "N11",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 修正公司总体预算，condition=N"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N13",
+      "to": "N12",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 审核，condition=N"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N13",
+      "to": "N14",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 年度预算下达，condition=Y"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "年度预算下达 -> 预算执行"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "预算执行 -> 预算编制资料存档"
+    }
+  ]
+}

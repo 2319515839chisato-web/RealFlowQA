@@ -1,0 +1,218 @@
+{
+  "chart_id": "chart_050",
+  "title": "行政办公室发文工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "各部门人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "行政人员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "行政经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关规程表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "拟稿",
+      "full_label": "各部门人员拟稿",
+      "lane_id": "L1",
+      "responsible": "各部门人员"
+    },
+    {
+      "node_id": "N2",
+      "text": "公文会签",
+      "full_label": "行政人员公文会签",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N3",
+      "text": "审核",
+      "full_label": "行政经理审核",
+      "lane_id": "L3",
+      "responsible": "行政经理"
+    },
+    {
+      "node_id": "N4",
+      "text": "核稿、编号",
+      "full_label": "行政人员核稿、编号",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N5",
+      "text": "打印、校对",
+      "full_label": "行政人员打印、校对",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N6",
+      "text": "复印、登记",
+      "full_label": "行政人员复印、登记",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N7",
+      "text": "分发",
+      "full_label": "行政人员分发",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N8",
+      "text": "传阅、催办",
+      "full_label": "行政人员传阅、催办",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N9",
+      "text": "发放",
+      "full_label": "行政人员发放",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    },
+    {
+      "node_id": "N10",
+      "text": "审核",
+      "full_label": "行政经理审核",
+      "lane_id": "L3",
+      "responsible": "行政经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "查阅",
+      "full_label": "各部门人员查阅",
+      "lane_id": "L1",
+      "responsible": "各部门人员"
+    },
+    {
+      "node_id": "N12",
+      "text": "立卷归档",
+      "full_label": "行政人员立卷归档",
+      "lane_id": "L2",
+      "responsible": "行政人员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "拟稿 -> 公文会签"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "公文会签 -> 审核"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 核稿、编号，condition=Y"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N2",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 公文会签，condition=N"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "核稿、编号 -> 打印、校对"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "打印、校对 -> 复印、登记"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "复印、登记 -> 分发"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "分发 -> 传阅、催办"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "传阅、催办 -> 发放"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发放 -> 审核"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N9",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核 -> 发放，condition=N"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核 -> 查阅，condition=Y"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "查阅 -> 立卷归档"
+    }
+  ]
+}

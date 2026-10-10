@@ -1,0 +1,200 @@
+{
+  "chart_id": "chart_049",
+  "title": "销售退货管理工作流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "销售部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "销售经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "相关部门",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "申请退货",
+      "full_label": "客户申请退货",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "销售部审核",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N3",
+      "text": "确认",
+      "full_label": "销售部确认",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N4",
+      "text": "同意退货",
+      "full_label": "销售部同意退货",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N5",
+      "text": "审批",
+      "full_label": "销售经理审批",
+      "lane_id": "L3",
+      "responsible": "销售经理"
+    },
+    {
+      "node_id": "N6",
+      "text": "传达信息",
+      "full_label": "销售部传达信息",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N7",
+      "text": "办理退货",
+      "full_label": "客户办理退货",
+      "lane_id": "L1",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N8",
+      "text": "退货入库",
+      "full_label": "相关部门退货入库",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N9",
+      "text": "办理退款",
+      "full_label": "销售部办理退款",
+      "lane_id": "L2",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N10",
+      "text": "财务部退款",
+      "full_label": "相关部门财务部退款",
+      "lane_id": "L4",
+      "responsible": "相关部门"
+    },
+    {
+      "node_id": "N11",
+      "text": "接受退款",
+      "full_label": "客户接受退款",
+      "lane_id": "L1",
+      "responsible": "客户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "申请退货 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 确认"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N1",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "确认 -> 申请退货，condition=N"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "确认 -> 同意退货，condition=Y"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "同意退货 -> 审批"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审批 -> 传达信息"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "传达信息 -> 办理退货"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理退货 -> 退货入库"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "退货入库 -> 办理退款"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "办理退款 -> 财务部退款"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "财务部退款 -> 接受退款"
+    }
+  ]
+}

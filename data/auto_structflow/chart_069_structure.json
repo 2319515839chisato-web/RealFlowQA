@@ -1,0 +1,196 @@
+{
+  "chart_id": "chart_069",
+  "title": "销售流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "经销商",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "订单管理中心",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "财务管理中心",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "物流中心",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "开始",
+      "full_label": "经销商开始",
+      "lane_id": "L1",
+      "responsible": "经销商"
+    },
+    {
+      "node_id": "N2",
+      "text": "下达订单，办理车款",
+      "full_label": "经销商下达订单，办理车款",
+      "lane_id": "L1",
+      "responsible": "经销商"
+    },
+    {
+      "node_id": "N3",
+      "text": "货款入账流程",
+      "full_label": "经销商货款入账流程",
+      "lane_id": "L1",
+      "responsible": "经销商"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核订单",
+      "full_label": "订单管理中心审核订单",
+      "lane_id": "L2",
+      "responsible": "订单管理中心"
+    },
+    {
+      "node_id": "N5",
+      "text": "结算订单",
+      "full_label": "财务管理中心结算订单",
+      "lane_id": "L3",
+      "responsible": "财务管理中心"
+    },
+    {
+      "node_id": "N6",
+      "text": "组织发运",
+      "full_label": "物流中心组织发运",
+      "lane_id": "L4",
+      "responsible": "物流中心"
+    },
+    {
+      "node_id": "N7",
+      "text": "开票",
+      "full_label": "财务管理中心开票",
+      "lane_id": "L3",
+      "responsible": "财务管理中心"
+    },
+    {
+      "node_id": "N8",
+      "text": "邮寄发票",
+      "full_label": "订单管理中心邮寄发票",
+      "lane_id": "L2",
+      "responsible": "订单管理中心"
+    },
+    {
+      "node_id": "N9",
+      "text": "签收发票",
+      "full_label": "经销商签收发票",
+      "lane_id": "L1",
+      "responsible": "经销商"
+    },
+    {
+      "node_id": "N10",
+      "text": "结束",
+      "full_label": "经销商结束",
+      "lane_id": "L1",
+      "responsible": "经销商"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开始 -> 下达订单，办理车款"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "下达订单，办理车款 -> 货款入账流程"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "货款入账流程 -> 审核订单"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N2",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "审核订单 -> 下达订单，办理车款，condition=N"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "审核订单 -> 结算订单，condition=Y"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N4",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "结算订单 -> 审核订单，condition=N"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N5",
+      "to": "N6",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "结算订单 -> 组织发运，condition=Y"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "组织发运 -> 开票"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开票 -> 邮寄发票"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "邮寄发票 -> 签收发票"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N8",
+      "condition": "N",
+      "edge_type": "loop",
+      "description": "签收发票 -> 邮寄发票，condition=N"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N10",
+      "condition": "Y",
+      "edge_type": "condition",
+      "description": "签收发票 -> 结束，condition=Y"
+    }
+  ]
+}

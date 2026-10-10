@@ -1,0 +1,418 @@
+{
+  "chart_id": "chart_008",
+  "title": "",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "用户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "充电桩",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "平台",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "插枪",
+      "full_label": "用户插枪",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N2",
+      "text": "VIN启动",
+      "full_label": "用户VIN启动",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N3",
+      "text": "获取VIN",
+      "full_label": "充电桩获取VIN",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N4",
+      "text": "获取成功?",
+      "full_label": "充电桩获取成功?",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N5",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N6",
+      "text": "VIN鉴权",
+      "full_label": "充电桩VIN鉴权",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N7",
+      "text": "鉴权",
+      "full_label": "平台鉴权",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N8",
+      "text": "鉴权通过?",
+      "full_label": "充电桩鉴权通过?",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N9",
+      "text": "启动充电",
+      "full_label": "充电桩启动充电",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N10",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N11",
+      "text": "启动成功?",
+      "full_label": "充电桩启动成功?",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N12",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N13",
+      "text": "充电中",
+      "full_label": "充电桩充电中",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N14",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N15",
+      "text": "停止",
+      "full_label": "用户停止",
+      "lane_id": "L1",
+      "responsible": "用户"
+    },
+    {
+      "node_id": "N16",
+      "text": "停止充电",
+      "full_label": "充电桩停止充电",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N17",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N18",
+      "text": "充电停止",
+      "full_label": "充电桩充电停止",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N19",
+      "text": "业务处理",
+      "full_label": "平台业务处理",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N20",
+      "text": "上报账单",
+      "full_label": "充电桩上报账单",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N21",
+      "text": "扣费结算",
+      "full_label": "平台扣费结算",
+      "lane_id": "L3",
+      "responsible": "平台"
+    },
+    {
+      "node_id": "N22",
+      "text": "费用信息",
+      "full_label": "充电桩费用信息",
+      "lane_id": "L2",
+      "responsible": "充电桩"
+    },
+    {
+      "node_id": "N23",
+      "text": "结束",
+      "full_label": "用户结束",
+      "lane_id": "L1",
+      "responsible": "用户"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "插枪 -> VIN启动"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "VIN启动 -> 获取VIN"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "获取VIN -> 获取成功?"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N6",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "获取成功? -> VIN鉴权，condition=是"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N23",
+      "condition": "0x33",
+      "edge_type": "condition",
+      "description": "业务处理 ->结束,condition=0x33"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N4",
+      "to": "N23",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "获取成功? -> 结束，condition=否"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N4",
+      "to": "N5",
+      "condition": "0x23(操作结果)",
+      "edge_type": "condition",
+      "description": "获取成功？ -> 业务处理,condition=0x23(操作结果)"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N7",
+      "condition": "0x20（鉴权）",
+      "edge_type": "condition",
+      "description": "VIN鉴权 -> 鉴权,condition=0x20（鉴权）"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "0x30",
+      "edge_type": "condition",
+      "description": "鉴权 -> 鉴权通过？,condition=0x30"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "是",
+      "edge_type": "condition",
+      "description": "鉴权通过？-> 启动充电, condition=是"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N8",
+      "to": "N23",
+      "condition": "否",
+      "edge_type": "condition",
+      "description": "鉴权通过？ -> 结束， condition=否"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N9",
+      "to": "N10",
+      "condition": "0x23（操作结果）",
+      "edge_type": "condition",
+      "description": "启动充电 -> 业务处理,condition=0x23（操作结果）"
+    },
+ {
+      "edge_id": "E13",
+      "from": "N9",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "启动充电 -> 启动成功？"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N10",
+      "to": "N11",
+      "condition": "0x33",
+      "edge_type": "condition",
+      "description": "业务处理 -> 启动成功？,condition=0x33"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N11",
+      "to": "N13",
+      "condition": "成功",
+      "edge_type": "condition",
+      "description": "启动成功？-> 充电中，condition=成功"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N11",
+      "to": "N23",
+      "condition": "失败",
+      "edge_type": "condition",
+      "description": "启动成功？-> 结束，condition=失败"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N11",
+      "to": "N12",
+      "condition": "0x24（充电开始）",
+      "edge_type": "condition",
+      "description": "启动成功？ -> 业务处理,condition=0x24（充电开始）"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N12",
+      "to": "N13",
+      "condition": "0x34",
+      "edge_type": "condition",
+      "description": "业务处理 -> 充电中,condition=0x34"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N13",
+      "to": "N14",
+      "condition": "0x25(充电信息)",
+      "edge_type": "condition",
+      "description": "充电中-> 业务处理,condition=0x25(充电信息)"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N13",
+      "to": "N18",
+      "condition": "自然充满或满足策略",
+      "edge_type": "condition",
+      "description": "充电中 -> 充电停止,condition=自然充满或满足策略"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "停止 -> 停止充电"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N16",
+      "to": "N17",
+      "condition": "0x23(操作结果)",
+      "edge_type": "condition",
+      "description": "停止充电 -> 业务处理,condition=0x23(操作结果)"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N17",
+      "to": "N18",
+      "condition": "0x33",
+      "edge_type": "condition",
+      "description": "业务处理 -> 充电停止,condition=0x33"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N18",
+      "to": "N19",
+      "condition": "0x26(充电结束)",
+      "edge_type": "condition",
+      "description": "充电停止 -> 业务处理,condition=0x26(充电结束)"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N19",
+      "to": "N20",
+      "condition": "0x36",
+      "edge_type": "condition",
+      "description": "业务处理 -> 上报账单,condition=0x36"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N20",
+      "to": "N21",
+      "condition": "0x27(充电账单)",
+      "edge_type": "condition",
+      "description": "上报账单 -> 扣费结算,condition=0x27(充电账单)"
+    },
+    {
+      "edge_id": "E27",
+      "from": "N21",
+      "to": "N22",
+      "condition": "0x37",
+      "edge_type": "condition",
+      "description": "扣费结算 -> 费用信息,condition=0x37"
+    },
+    {
+      "edge_id": "E28",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "费用信息 -> 结束"
+    },
+    {
+      "edge_id": "E29",
+      "from": "N14",
+      "to": "N13",
+      "condition": "0x35",
+      "edge_type": "normal",
+      "description": "业务处理 -> 充电中，condition=0x35"
+    }
+  ]
+}

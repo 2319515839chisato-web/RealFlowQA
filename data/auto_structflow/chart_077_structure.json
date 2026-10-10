@@ -1,0 +1,395 @@
+{
+  "chart_id": "chart_077",
+  "title": "生产流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "商品部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "计划部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "仓库",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "裁床",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "车间",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "后道",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L7",
+      "name": "财务部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L8",
+      "name": "统计",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "客户订单",
+      "full_label": "商品部客户订单",
+      "lane_id": "L1",
+      "responsible": "商品部"
+    },
+    {
+      "node_id": "N2",
+      "text": "生产下单",
+      "full_label": "计划部生产下单",
+      "lane_id": "L2",
+      "responsible": "计划部"
+    },
+    {
+      "node_id": "N3",
+      "text": "是否有库存",
+      "full_label": "计划部是否有库存",
+      "lane_id": "L2",
+      "responsible": "计划部"
+    },
+    {
+      "node_id": "N4",
+      "text": "采购订单合同",
+      "full_label": "商品部采购订单合同",
+      "lane_id": "L1",
+      "responsible": "商品部"
+    },
+    {
+      "node_id": "N5",
+      "text": "订单面辅料收货",
+      "full_label": "仓库订单面辅料收货",
+      "lane_id": "L3",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N6",
+      "text": "生产发料",
+      "full_label": "仓库生产发料",
+      "lane_id": "L3",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N7",
+      "text": "开裁",
+      "full_label": "裁床开裁",
+      "lane_id": "L4",
+      "responsible": "裁床"
+    },
+    {
+      "node_id": "N8",
+      "text": "发裁片",
+      "full_label": "裁床发裁片",
+      "lane_id": "L4",
+      "responsible": "裁床"
+    },
+    {
+      "node_id": "N9",
+      "text": "领裁片",
+      "full_label": "车间领裁片",
+      "lane_id": "L5",
+      "responsible": "车间"
+    },
+    {
+      "node_id": "N10",
+      "text": "车间生产",
+      "full_label": "车间生产",
+      "lane_id": "L5",
+      "responsible": "车间"
+    },
+    {
+      "node_id": "N11",
+      "text": "后道收发",
+      "full_label": "后道收发",
+      "lane_id": "L6",
+      "responsible": "后道"
+    },
+    {
+      "node_id": "N12",
+      "text": "后道包装",
+      "full_label": "后道包装",
+      "lane_id": "L6",
+      "responsible": "后道"
+    },
+    {
+      "node_id": "N13",
+      "text": "成品入库",
+      "full_label": "仓库成品入库",
+      "lane_id": "L3",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N14",
+      "text": "订单出库",
+      "full_label": "仓库订单出库",
+      "lane_id": "L3",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N15",
+      "text": "订单核销",
+      "full_label": "商品部订单核销",
+      "lane_id": "L1",
+      "responsible": "商品部"
+    },
+    {
+      "node_id": "N16",
+      "text": "财务付款",
+      "full_label": "财务部财务付款",
+      "lane_id": "L7",
+      "responsible": "财务部"
+    },
+    {
+      "node_id": "N17",
+      "text": "裁床件数统计",
+      "full_label": "统计裁床件数统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N18",
+      "text": "裁片收发统计",
+      "full_label": "统计裁片收发统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N19",
+      "text": "车间组产量统计",
+      "full_label": "统计车间组产量统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N20",
+      "text": "后道包装统计",
+      "full_label": "统计后道包装统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N21",
+      "text": "成品出库统计",
+      "full_label": "统计成品出库统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N22",
+      "text": "人事统计",
+      "full_label": "统计人事统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    },
+    {
+      "node_id": "N23",
+      "text": "计件工资统计",
+      "full_label": "统计计件工资统计",
+      "lane_id": "L8",
+      "responsible": "统计"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户订单 -> 生产下单"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产下单 -> 是否有库存"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N6",
+      "condition": "有",
+      "edge_type": "condition",
+      "description": "是否有库存 -> 生产发料，condition=有"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "无",
+      "edge_type": "condition",
+      "description": "是否有库存 -> 采购订单合同，condition=无"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "采购订单合同 -> 订单面辅料收货"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单面辅料收货 -> 生产发料"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产发料 -> 开裁"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开裁 -> 发裁片"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发裁片 -> 领裁片"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "领裁片 -> 车间生产"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "车间生产 -> 后道收发"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "后道收发 -> 后道包装"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "后道包装 -> 成品入库"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "成品入库 -> 订单出库"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单出库 -> 订单核销"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N6",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产发料 -> 财务付款"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N7",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "开裁 -> 裁床件数统计"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N8",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "发裁片 -> 裁片收发统计"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N10",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "车间生产 -> 车间组产量统计"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N12",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "后道包装 -> 后道包装统计"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N14",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订单出库 -> 成品出库统计"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N19",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "车间组产量统计 -> 人事统计"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "人事统计 -> 计件工资统计"
+    }
+  ]
+}

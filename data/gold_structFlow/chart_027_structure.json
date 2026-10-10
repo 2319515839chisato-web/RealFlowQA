@@ -1,0 +1,222 @@
+{
+  "chart_id": "chart_027",
+  "title": "货物（成品）出库管理流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "库房主管",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "库管员",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "销售部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "客户",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "相关规程/表单",
+      "description": "非执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "订货",
+      "full_label": "客户订货",
+      "lane_id": "L4",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N2",
+      "text": "审核",
+      "full_label": "销售部审核",
+      "lane_id": "L3",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N3",
+      "text": "签《发货单》",
+      "full_label": "销售部签《发货单》",
+      "lane_id": "L3",
+      "responsible": "销售部"
+    },
+    {
+      "node_id": "N4",
+      "text": "审核",
+      "full_label": "库房主管审核",
+      "lane_id": "L1",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N5",
+      "text": "签《出库单》",
+      "full_label": "库房主管签《出库单》",
+      "lane_id": "L1",
+      "responsible": "库房主管"
+    },
+    {
+      "node_id": "N6",
+      "text": "接收《出库单》",
+      "full_label": "库管员接收《出库单》",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N7",
+      "text": "备货",
+      "full_label": "库管员备货",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N8",
+      "text": "复核",
+      "full_label": "库管员复核",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N9",
+      "text": "货物包装标识",
+      "full_label": "库管员货物包装标识",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N10",
+      "text": "登记入账",
+      "full_label": "库管员登记入账",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N11",
+      "text": "货物交接",
+      "full_label": "库管员货物交接",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    },
+    {
+      "node_id": "N12",
+      "text": "货物交接",
+      "full_label": "客户货物交接",
+      "lane_id": "L4",
+      "responsible": "客户"
+    },
+    {
+      "node_id": "N13",
+      "text": "善后清理",
+      "full_label": "库管员善后清理",
+      "lane_id": "L2",
+      "responsible": "库管员"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "订货 -> 审核"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 签《发货单》"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签《发货单》 -> 审核"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "审核 -> 签《出库单》"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "签《出库单》 -> 接收《出库单》"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "接收《出库单》 -> 备货"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "备货 -> 复核"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "复核 -> 货物包装标识"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "货物包装标识 -> 登记入账"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "登记入账 -> 货物交接"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "货物交接 -> 货物交接"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N11",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "货物交接 -> 善后清理"
+    }
+  ]
+}

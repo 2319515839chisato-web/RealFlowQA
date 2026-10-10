@@ -1,0 +1,303 @@
+{
+  "chart_id": "chart_076",
+  "title": "客户订制订单流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "销售内勤",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "计划部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "采购部",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "工厂",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "仓库",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "研发部",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "1.接到客户订单",
+      "full_label": "销售内勤1.接到客户订单",
+      "lane_id": "L1",
+      "responsible": "销售内勤"
+    },
+    {
+      "node_id": "N2",
+      "text": "2.量体归码",
+      "full_label": "研发部2.量体归码",
+      "lane_id": "L6",
+      "responsible": "研发部"
+    },
+    {
+      "node_id": "N3",
+      "text": "2.形成订单明细",
+      "full_label": "销售内勤2.形成订单明细",
+      "lane_id": "L1",
+      "responsible": "销售内勤"
+    },
+    {
+      "node_id": "N4",
+      "text": "3.订单录入排单表",
+      "full_label": "计划部3.订单录入排单表",
+      "lane_id": "L2",
+      "responsible": "计划部"
+    },
+    {
+      "node_id": "N5",
+      "text": "4.订单拆单",
+      "full_label": "工厂4.订单拆单",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N6",
+      "text": "5.原辅料库存确认",
+      "full_label": "工厂5.原辅料库存确认",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N7",
+      "text": "5.原辅料到库日期确认",
+      "full_label": "采购部5.原辅料到库日期确认",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    },
+    {
+      "node_id": "N8",
+      "text": "6.生产排工序时间计划",
+      "full_label": "工厂6.生产排工序时间计划",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N9",
+      "text": "6.生产进度更新/后道完成",
+      "full_label": "工厂6.生产进度更新/后道完成",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N10",
+      "text": "7.产成品入库制单",
+      "full_label": "工厂7.产成品入库制单",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N11",
+      "text": "8.拉成品到仓库",
+      "full_label": "仓库8.拉成品到仓库",
+      "lane_id": "L5",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N12",
+      "text": "9.产成品入库一审",
+      "full_label": "工厂9.产成品入库一审",
+      "lane_id": "L4",
+      "responsible": "工厂"
+    },
+    {
+      "node_id": "N13",
+      "text": "10.产成品入库二审",
+      "full_label": "计划部10.产成品入库二审",
+      "lane_id": "L2",
+      "responsible": "计划部"
+    },
+    {
+      "node_id": "N14",
+      "text": "11.产成品入库三审",
+      "full_label": "仓库11.产成品入库三审",
+      "lane_id": "L5",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N15",
+      "text": "12.开销售出库单",
+      "full_label": "销售内勤12.开销售出库单",
+      "lane_id": "L1",
+      "responsible": "销售内勤"
+    },
+    {
+      "node_id": "N16",
+      "text": "13.仓储物流部安排发货",
+      "full_label": "仓库13.仓储物流部安排发货",
+      "lane_id": "L5",
+      "responsible": "仓库"
+    },
+    {
+      "node_id": "N17",
+      "text": "结束",
+      "full_label": "采购部结束",
+      "lane_id": "L3",
+      "responsible": "采购部"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "需要量体",
+      "edge_type": "condition",
+      "description": "1.接到客户订单 -> 2.量体归码，condition=需要量体"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N1",
+      "to": "N3",
+      "condition": "不需量体",
+      "edge_type": "condition",
+      "description": "1.接到客户订单 -> 2.形成订单明细，condition=不需量体"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "2.量体归码 -> 2.形成订单明细"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "2.形成订单明细 -> 3.订单录入排单表"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "3.订单录入排单表 -> 4.订单拆单"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "4.订单拆单 -> 5.原辅料库存确认"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N6",
+      "to": "N7",
+      "condition": "缺料",
+      "edge_type": "condition",
+      "description": "5.原辅料库存确认 -> 5.原辅料到库日期确认，condition=缺料"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N6",
+      "to": "N8",
+      "condition": "不缺料",
+      "edge_type": "condition",
+      "description": "5.原辅料库存确认 -> 6.生产排工序时间计划，condition=不缺料"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "5.原辅料到库日期确认 -> 6.生产排工序时间计划"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "6.生产排工序时间计划 -> 6.生产进度更新/后道完成"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "6.生产进度更新/后道完成 -> 7.产成品入库制单"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "7.产成品入库制单 -> 8.拉成品到仓库"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N11",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "8.拉成品到仓库 -> 9.产成品入库一审"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "9.产成品入库一审 -> 10.产成品入库二审"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "10.产成品入库二审 -> 11.产成品入库三审"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "11.产成品入库三审 -> 12.开销售出库单"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "12.开销售出库单 -> 13.仓储物流部安排发货"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "13.仓储物流部安排发货 -> 结束"
+    }
+  ]
+}

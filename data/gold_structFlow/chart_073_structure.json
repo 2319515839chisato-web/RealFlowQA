@@ -1,0 +1,760 @@
+{
+  "chart_id": "chart_073",
+  "title": "新产品研发流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "产品委员会",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "市场代表",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "产品开发团队经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "芯片设计项目组",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L5",
+      "name": "项目管理工程师",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L6",
+      "name": "外协经理",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L7",
+      "name": "测试工程师",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "市场需求",
+      "full_label": "市场代表市场需求",
+      "lane_id": "L2",
+      "responsible": "市场代表"
+    },
+    {
+      "node_id": "N2",
+      "text": "立项建议书",
+      "full_label": "市场代表立项建议书",
+      "lane_id": "L2",
+      "responsible": "市场代表"
+    },
+    {
+      "node_id": "N3",
+      "text": "立项启动评审",
+      "full_label": "产品委员会立项启动评审",
+      "lane_id": "L1",
+      "responsible": "产品委员会"
+    },
+    {
+      "node_id": "N4",
+      "text": "项目任务书、业务计划书",
+      "full_label": "产品开发团队经理项目任务书、业务计划书",
+      "lane_id": "L3",
+      "responsible": "产品开发团队经理"
+    },
+    {
+      "node_id": "N5",
+      "text": "立项评审",
+      "full_label": "产品委员会立项评审",
+      "lane_id": "L1",
+      "responsible": "产品委员会"
+    },
+    {
+      "node_id": "N6",
+      "text": "项目启动",
+      "full_label": "产品委员会项目启动",
+      "lane_id": "L1",
+      "responsible": "产品委员会"
+    },
+    {
+      "node_id": "N7",
+      "text": "芯片需求规格",
+      "full_label": "芯片设计项目组芯片需求规格",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N8",
+      "text": "需求规格评审",
+      "full_label": "产品开发团队经理需求规格评审",
+      "lane_id": "L3",
+      "responsible": "产品开发团队经理"
+    },
+    {
+      "node_id": "N9",
+      "text": "芯片概要设计",
+      "full_label": "芯片设计项目组芯片概要设计",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N10",
+      "text": "概要设计评审",
+      "full_label": "产品开发团队经理概要设计评审",
+      "lane_id": "L3",
+      "responsible": "产品开发团队经理"
+    },
+    {
+      "node_id": "N11",
+      "text": "样片测试方案",
+      "full_label": "芯片设计项目组样片测试方案",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N12",
+      "text": "产品开发计划、业务计划书更新",
+      "full_label": "产品开发团队经理产品开发计划、业务计划书更新",
+      "lane_id": "L3",
+      "responsible": "产品开发团队经理"
+    },
+    {
+      "node_id": "N13",
+      "text": "策划评审",
+      "full_label": "产品委员会策划评审",
+      "lane_id": "L1",
+      "responsible": "产品委员会"
+    },
+    {
+      "node_id": "N14",
+      "text": "芯片详细设计",
+      "full_label": "芯片设计项目组芯片详细设计",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N15",
+      "text": "前端设计实现",
+      "full_label": "芯片设计项目组前端设计实现",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N16",
+      "text": "逻辑验证",
+      "full_label": "芯片设计项目组逻辑验证",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N17",
+      "text": "后端设计实现",
+      "full_label": "芯片设计项目组后端设计实现",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N18",
+      "text": "芯片整体设计实现文件",
+      "full_label": "芯片设计项目组芯片整体设计实现文件",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N19",
+      "text": "设计实现评审",
+      "full_label": "产品开发团队经理设计实现评审",
+      "lane_id": "L3",
+      "responsible": "产品开发团队经理"
+    },
+    {
+      "node_id": "N20",
+      "text": "GDS版图数据",
+      "full_label": "芯片设计项目组GDS版图数据",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N21",
+      "text": "TAPOUT评审",
+      "full_label": "芯片设计项目组TAPOUT评审",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N22",
+      "text": "项目流片",
+      "full_label": "外协经理项目流片",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N23",
+      "text": "外协加工",
+      "full_label": "外协经理外协加工",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N24",
+      "text": "提供样品",
+      "full_label": "外协经理提供样品",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N25",
+      "text": "样片测试",
+      "full_label": "芯片设计项目组样片测试",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N26",
+      "text": "功能测试",
+      "full_label": "芯片设计项目组功能测试",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N27",
+      "text": "性能测试",
+      "full_label": "芯片设计项目组性能测试",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N28",
+      "text": "极限参数测试",
+      "full_label": "芯片设计项目组极限参数测试",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N29",
+      "text": "样片测试评审",
+      "full_label": "芯片设计项目组样片测试评审",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N30",
+      "text": "客户试用",
+      "full_label": "市场代表客户试用",
+      "lane_id": "L2",
+      "responsible": "市场代表"
+    },
+    {
+      "node_id": "N31",
+      "text": "初样技术条件",
+      "full_label": "芯片设计项目组初样技术条件",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N32",
+      "text": "产品说明书",
+      "full_label": "芯片设计项目组产品说明书",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N33",
+      "text": "初样评审",
+      "full_label": "项目管理工程师初样评审",
+      "lane_id": "L5",
+      "responsible": "项目管理工程师"
+    },
+    {
+      "node_id": "N34",
+      "text": "流片",
+      "full_label": "外协经理流片",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N35",
+      "text": "圆片测试",
+      "full_label": "测试工程师圆片测试",
+      "lane_id": "L7",
+      "responsible": "测试工程师"
+    },
+    {
+      "node_id": "N36",
+      "text": "特性参数提取",
+      "full_label": "测试工程师特性参数提取",
+      "lane_id": "L7",
+      "responsible": "测试工程师"
+    },
+    {
+      "node_id": "N37",
+      "text": "正样测试评审",
+      "full_label": "芯片设计项目组正样测试评审",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N38",
+      "text": "客户试用",
+      "full_label": "市场代表客户试用",
+      "lane_id": "L2",
+      "responsible": "市场代表"
+    },
+    {
+      "node_id": "N39",
+      "text": "正样技术条件",
+      "full_label": "芯片设计项目组正样技术条件",
+      "lane_id": "L4",
+      "responsible": "芯片设计项目组"
+    },
+    {
+      "node_id": "N40",
+      "text": "正样评审",
+      "full_label": "项目管理工程师正样评审",
+      "lane_id": "L5",
+      "responsible": "项目管理工程师"
+    },
+    {
+      "node_id": "N41",
+      "text": "设计定型评审",
+      "full_label": "项目管理工程师设计定型评审",
+      "lane_id": "L5",
+      "responsible": "项目管理工程师"
+    },
+    {
+      "node_id": "N42",
+      "text": "批量试生产",
+      "full_label": "外协经理批量试生产",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N43",
+      "text": "外协测试",
+      "full_label": "外协经理外协测试",
+      "lane_id": "L6",
+      "responsible": "外协经理"
+    },
+    {
+      "node_id": "N44",
+      "text": "生产定型评审",
+      "full_label": "项目管理工程师生产定型评审",
+      "lane_id": "L5",
+      "responsible": "项目管理工程师"
+    },
+    {
+      "node_id": "N45",
+      "text": "量产生产移交",
+      "full_label": "项目管理工程师量产生产移交",
+      "lane_id": "L5",
+      "responsible": "项目管理工程师"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "市场需求 -> 立项建议书"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项建议书 -> 立项启动评审"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项启动评审 -> 项目任务书、业务计划书"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目任务书、业务计划书 -> 立项评审"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "立项评审 -> 项目启动"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目启动 -> 芯片需求规格"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片需求规格 -> 需求规格评审"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N8",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "需求规格评审 -> 芯片概要设计"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N9",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片概要设计 -> 概要设计评审"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "概要设计评审 -> 样片测试方案"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "概要设计评审 -> 产品开发计划、业务计划书更新"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品开发计划、业务计划书更新 -> 策划评审"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "策划评审 -> 芯片详细设计"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N14",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片详细设计 -> 前端设计实现"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片详细设计 -> 逻辑验证"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N14",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片详细设计 -> 后端设计实现"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N15",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "前端设计实现 -> 芯片整体设计实现文件"
+    },
+    {
+      "edge_id": "E18",
+      "from": "N16",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "逻辑验证 -> 芯片整体设计实现文件"
+    },
+    {
+      "edge_id": "E19",
+      "from": "N17",
+      "to": "N18",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "后端设计实现 -> 芯片整体设计实现文件"
+    },
+    {
+      "edge_id": "E20",
+      "from": "N18",
+      "to": "N19",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "芯片整体设计实现文件 -> 设计实现评审"
+    },
+    {
+      "edge_id": "E21",
+      "from": "N19",
+      "to": "N20",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计实现评审 -> GDS版图数据"
+    },
+    {
+      "edge_id": "E22",
+      "from": "N20",
+      "to": "N21",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "GDS版图数据 -> TAPOUT评审"
+    },
+    {
+      "edge_id": "E23",
+      "from": "N21",
+      "to": "N22",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "TAPOUT评审 -> 项目流片"
+    },
+    {
+      "edge_id": "E24",
+      "from": "N22",
+      "to": "N23",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目流片 -> 外协加工"
+    },
+    {
+      "edge_id": "E25",
+      "from": "N23",
+      "to": "N24",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "外协加工 -> 提供样品"
+    },
+    {
+      "edge_id": "E26",
+      "from": "N24",
+      "to": "N25",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "提供样品 -> 样片测试"
+    },
+    {
+      "edge_id": "E27",
+      "from": "N25",
+      "to": "N26",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "样片测试 -> 功能测试"
+    },
+    {
+      "edge_id": "E28",
+      "from": "N25",
+      "to": "N27",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "样片测试 -> 性能测试"
+    },
+    {
+      "edge_id": "E29",
+      "from": "N25",
+      "to": "N28",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "样片测试 -> 极限参数测试"
+    },
+    {
+      "edge_id": "E30",
+      "from": "N26",
+      "to": "N29",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "功能测试 -> 样片测试评审"
+    },
+    {
+      "edge_id": "E31",
+      "from": "N27",
+      "to": "N29",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "性能测试 -> 样片测试评审"
+    },
+    {
+      "edge_id": "E32",
+      "from": "N28",
+      "to": "N29",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "极限参数测试 -> 样片测试评审"
+    },
+    {
+      "edge_id": "E33",
+      "from": "N29",
+      "to": "N30",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "样片测试评审 -> 客户试用"
+    },
+    {
+      "edge_id": "E34",
+      "from": "N30",
+      "to": "N31",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "客户试用 -> 初样技术条件"
+    },
+    {
+      "edge_id": "E35",
+      "from": "N31",
+      "to": "N32",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "初样技术条件 -> 产品说明书"
+    },
+    {
+      "edge_id": "E36",
+      "from": "N32",
+      "to": "N33",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "产品说明书 -> 初样评审"
+    },
+    {
+      "edge_id": "E37",
+      "from": "N33",
+      "to": "N34",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "初样评审 -> 流片"
+    },
+    {
+      "edge_id": "E38",
+      "from": "N34",
+      "to": "N35",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "流片 -> 圆片测试"
+    },
+    {
+      "edge_id": "E39",
+      "from": "N35",
+      "to": "N36",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "圆片测试 -> 特性参数提取"
+    },
+    {
+      "edge_id": "E40",
+      "from": "N36",
+      "to": "N37",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "特性参数提取 -> 正样测试评审"
+    },
+    {
+      "edge_id": "E41",
+      "from": "N37",
+      "to": "N38",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "正样测试评审 -> 客户试用"
+    },
+    {
+      "edge_id": "E42",
+      "from": "N37",
+      "to": "N39",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "正样测试评审 -> 正样技术条件"
+    },
+    {
+      "edge_id": "E43",
+      "from": "N39",
+      "to": "N40",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "正样技术条件 -> 正样评审"
+    },
+    {
+      "edge_id": "E44",
+      "from": "N40",
+      "to": "N41",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "正样评审 -> 设计定型评审"
+    },
+    {
+      "edge_id": "E45",
+      "from": "N41",
+      "to": "N42",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计定型评审 -> 批量试生产"
+    },
+    {
+      "edge_id": "E46",
+      "from": "N42",
+      "to": "N43",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "批量试生产 -> 外协测试"
+    },
+    {
+      "edge_id": "E47",
+      "from": "N42",
+      "to": "N44",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "批量试生产 -> 生产定型评审"
+    },
+    {
+      "edge_id": "E48",
+      "from": "N44",
+      "to": "N45",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "生产定型评审 -> 量产生产移交"
+    },
+{
+      "edge_id": "E49",
+      "from": "N31",
+      "to": "N32",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "初样技术条件 -> 初样评审"
+    },
+{
+      "edge_id": "E50",
+      "from": "N11",
+      "to": "N25",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "样片测试方案 -> 样片测试"
+    }
+  ]
+}

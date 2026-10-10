@@ -1,0 +1,285 @@
+{
+  "chart_id": "chart_007",
+  "title": "DBB模式下BIM整体实施流程",
+  "lanes": [
+    {
+      "lane_id": "L1",
+      "name": "建设单位",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L2",
+      "name": "设计单位",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L3",
+      "name": "施工总承包单位",
+      "description": "执行泳道"
+    },
+    {
+      "lane_id": "L4",
+      "name": "监理单位",
+      "description": "执行泳道"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "N1",
+      "text": "项目开始",
+      "full_label": "建设单位项目开始",
+      "lane_id": "L1",
+      "responsible": "建设单位"
+    },
+    {
+      "node_id": "N2",
+      "text": "明确BIM应用目标",
+      "full_label": "建设单位明确BIM应用目标",
+      "lane_id": "L1",
+      "responsible": "建设单位"
+    },
+    {
+      "node_id": "N3",
+      "text": "BIM咨询规划",
+      "full_label": "建设单位BIM咨询规划",
+      "lane_id": "L1",
+      "responsible": "建设单位"
+    },
+    {
+      "node_id": "N4",
+      "text": "编制设计BIM实施方案",
+      "full_label": "设计单位编制设计BIM实施方案",
+      "lane_id": "L2",
+      "responsible": "设计单位"
+    },
+    {
+      "node_id": "N5",
+      "text": "设计模型创建",
+      "full_label": "设计单位设计模型创建",
+      "lane_id": "L2",
+      "responsible": "设计单位"
+    },
+    {
+      "node_id": "N6",
+      "text": "设计阶段模型应用",
+      "full_label": "设计单位设计阶段模型应用",
+      "lane_id": "L2",
+      "responsible": "设计单位"
+    },
+    {
+      "node_id": "N7",
+      "text": "设计模型交付",
+      "full_label": "设计单位设计模型交付",
+      "lane_id": "L2",
+      "responsible": "设计单位"
+    },
+    {
+      "node_id": "N8",
+      "text": "编制施工BIM实施方案",
+      "full_label": "施工总承包单位编制施工BIM实施方案",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N9",
+      "text": "编制监理BIM实施细则",
+      "full_label": "监理单位编制监理BIM实施细则",
+      "lane_id": "L4",
+      "responsible": "监理单位"
+    },
+    {
+      "node_id": "N10",
+      "text": "深化设计模型创建",
+      "full_label": "施工总承包单位深化设计模型创建",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N11",
+      "text": "施工阶段模型业务审核",
+      "full_label": "监理单位施工阶段模型业务审核",
+      "lane_id": "L4",
+      "responsible": "监理单位"
+    },
+    {
+      "node_id": "N12",
+      "text": "施工过程模型创建",
+      "full_label": "施工总承包单位施工过程模型创建",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N13",
+      "text": "施工阶段模型应用",
+      "full_label": "施工总承包单位施工阶段模型应用",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N14",
+      "text": "施工阶段模型交付",
+      "full_label": "施工总承包单位施工阶段模型交付",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N15",
+      "text": "竣工资料审核",
+      "full_label": "监理单位竣工资料审核",
+      "lane_id": "L4",
+      "responsible": "监理单位"
+    },
+    {
+      "node_id": "N16",
+      "text": "竣工交付模型创建",
+      "full_label": "施工总承包单位竣工交付模型创建",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    },
+    {
+      "node_id": "N17",
+      "text": "项目结束",
+      "full_label": "施工总承包单位项目结束",
+      "lane_id": "L3",
+      "responsible": "施工总承包单位"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "E1",
+      "from": "N1",
+      "to": "N2",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "项目开始 -> 明确BIM应用目标"
+    },
+    {
+      "edge_id": "E2",
+      "from": "N2",
+      "to": "N3",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "明确BIM应用目标 -> BIM咨询规划"
+    },
+    {
+      "edge_id": "E3",
+      "from": "N3",
+      "to": "N4",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "BIM咨询规划 -> 编制设计BIM实施方案"
+    },
+    {
+      "edge_id": "E4",
+      "from": "N4",
+      "to": "N5",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制设计BIM实施方案 -> 设计模型创建"
+    },
+    {
+      "edge_id": "E5",
+      "from": "N5",
+      "to": "N6",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计模型创建 -> 设计阶段模型应用"
+    },
+    {
+      "edge_id": "E6",
+      "from": "N6",
+      "to": "N7",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计阶段模型应用 -> 设计模型交付"
+    },
+    {
+      "edge_id": "E7",
+      "from": "N7",
+      "to": "N8",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "设计模型交付 -> 编制施工BIM实施方案"
+    },
+    {
+      "edge_id": "E8",
+      "from": "N2",
+      "to": "N9",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "明确BIM应用目标 -> 编制监理BIM实施细则"
+    },
+    {
+      "edge_id": "E9",
+      "from": "N8",
+      "to": "N10",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制施工BIM实施方案 -> 深化设计模型创建"
+    },
+    {
+      "edge_id": "E10",
+      "from": "N10",
+      "to": "N12",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "深化设计模型创建 -> 施工过程模型创建"
+    },
+    {
+      "edge_id": "E11",
+      "from": "N12",
+      "to": "N13",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "施工过程模型创建 -> 施工阶段模型应用"
+    },
+    {
+      "edge_id": "E12",
+      "from": "N13",
+      "to": "N14",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "施工阶段模型应用 -> 施工阶段模型交付"
+    },
+    {
+      "edge_id": "E13",
+      "from": "N9",
+      "to": "N11",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "编制监理BIM实施细则 -> 施工阶段模型业务审核"
+    },
+    {
+      "edge_id": "E14",
+      "from": "N11",
+      "to": "N15",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "施工阶段模型业务审核 -> 竣工资料审核"
+    },
+    {
+      "edge_id": "E15",
+      "from": "N14",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "施工阶段模型交付 -> 竣工交付模型创建"
+    },
+    {
+      "edge_id": "E16",
+      "from": "N15",
+      "to": "N16",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "竣工资料审核 -> 竣工交付模型创建"
+    },
+    {
+      "edge_id": "E17",
+      "from": "N16",
+      "to": "N17",
+      "condition": "",
+      "edge_type": "normal",
+      "description": "竣工交付模型创建 -> 项目结束"
+    }
+  ]
+}
