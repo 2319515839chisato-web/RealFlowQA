@@ -1,6 +1,6 @@
 # run_structure.py
 """
-Batch call gpt-5.4 to parse flowchart images into Figure2StructuralText,
+Batch call gpt-5.5 to parse flowchart images into Figure2StructuralText,
 and save the outputs by chart_id to structure/chart_xxx_structure.json.
 
 The final saved structure JSON retains only the following top-level fields:
@@ -33,7 +33,7 @@ from clients import get_model_client
 # =========================
 # Model configuration
 # =========================
-MODEL_NAME = "gpt-5.4"
+MODEL_NAME = "gpt-5.5"
 
 API_KEY = ""
 

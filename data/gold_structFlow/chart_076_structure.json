@@ -304,7 +304,7 @@
       "from": "N11",
       "to": "N14",
       "condition": "",
-      "edge_type": "normal"
+      "edge_type": "normal",
       "description": "8.拉成品到仓库 -> 11.产成品入库三审"
     }
   ]
